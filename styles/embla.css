@@ -1,0 +1,36 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.embla {
+  @apply max-w-screen-md m-auto;
+  --slide-height: auto;
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+}
+.embla__viewport {
+  @apply overflow-hidden;
+}
+.embla__container {
+  @apply flex mt-[calc(var(--slide-spacing)_*_-1)] h-[calc(var(--slide-spacing)_+_var(--slide-height))] flex-col;
+  backface-visibility: hidden;
+  touch-action: pan-x pinch-zoom;
+}
+.embla__slide {
+  @apply flex-[0_0_var(--slide-size)] min-h-0 pt-[var(--slide-spacing)];
+}
+.embla__controls {
+  @apply grid grid-cols-[auto_1fr] justify-between gap-5;
+}
+.embla__buttons {
+  @apply grid grid-cols-2 gap-[0.6rem] items-center;
+}
+.embla__button {
+  @apply border border-default-300 appearance-none bg-transparent touch-manipulation inline-flex no-underline cursor-pointer shadow-[inset_0_0_0_0.2rem_var(--nextui-default-300)] size-9 z-[1] items-center justify-center m-0 p-0 rounded-[50%] disabled:text-neutral-400 dark:disabled:text-neutral-700;
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  -webkit-appearance: none;
+}
+.embla__button__svg {
+  @apply w-[35%] h-[35%];
+}

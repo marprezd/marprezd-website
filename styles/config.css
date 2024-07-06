@@ -1,0 +1,71 @@
+/* Other styles */
+:root {
+  --pre-code-line-highlight-border-width: 3px;
+}
+
+/* Colors */
+:root {
+  /* light mode colors */
+  --color-primitive-gray-100-rgb: theme(colors.neutral.50);
+  /* markdown colors */
+  --color-body: theme(colors.neutral.700);
+  --color-borders: theme(colors.neutral.300);
+  --color-headings: theme(colors.neutral.900);
+  --color-lead: theme(colors.neutral.600);
+  --color-link-inactive: theme(colors.neutral.500);
+  --color-links: theme(colors.cyan.700);
+  --color-bold: theme(colors.neutral.900);
+  --color-counters: theme(colors.neutral.500);
+  --color-bullets: theme(colors.neutral.300);
+  --color-hr: theme(colors.neutral.200);
+  --color-quotes: theme(colors.neutral.600);
+  --color-quote-borders: theme(colors.neutral.300);
+  --color-captions: var(--color-quotes);
+  --color-td-borders: var(--color-borders);
+  --color-th-bg: theme(colors.neutral.200);
+  --color-th-borders: var(--color-borders);
+  --color-toc-button-bg: theme(colors.neutral.100);
+
+  /* code blocks */
+  --color-code-bg: theme(colors.neutral.200);
+  --color-code-fg: theme(colors.neutral.950);
+  --color-pre-code-borders: var(--color-borders);
+  --color-pre-code-title-bg: var(--color-th-bg);
+  --color-pre-code-title-fg: theme(colors.neutral.950);
+  --color-pre-code-highlighted-chars: theme(colors.neutral.300/80%);
+  --color-pre-code-line-highlight: theme(colors.amber.100/50%);
+  --color-pre-code-line-highlight-border: theme(colors.amber.300);
+}
+
+.dark {
+  /* dark mode colors */
+  --color-primitive-gray-100-rgb: theme(colors.neutral.900);
+  /* markdown colors */
+  --color-body: theme(colors.neutral.300);
+  --color-borders: theme(colors.neutral.800);
+  --color-headings: theme(colors.neutral.50);
+  --color-lead: theme(colors.neutral.400);
+  --color-link-inactive: theme(colors.neutral.500);
+  --color-links: theme(colors.cyan.300);
+  --color-bold: theme(colors.neutral.100);
+  --color-counters: theme(colors.neutral.400);
+  --color-bullets: theme(colors.neutral.600);
+  --color-hr: theme(colors.neutral.700);
+  --color-quotes: var(--color-text-secondary);
+  --color-quote-borders: theme(colors.neutral.700);
+  --color-captions: var(--color-quotes);
+  --color-th-bg: theme(colors.neutral.900);
+  --color-th-borders: var(--color-borders);
+  --color-td-borders: var(--color-borders);
+  --color-toc-button-bg: theme(colors.neutral.700);
+
+  /* code blocks */
+  --color-code-bg: theme(colors.neutral.800);
+  --color-code-fg: theme(colors.neutral.100);
+  --color-pre-code-borders: var(--color-borders);
+  --color-pre-code-title-bg: var(--color-th-bg);
+  --color-pre-code-title-fg: theme(colors.neutral.200);
+  --color-pre-code-highlighted-chars: theme(colors.neutral.500/50%);
+  --color-pre-code-line-highlight: theme(colors.amber.500/10%);
+  --color-pre-code-line-highlight-border: theme(colors.amber.600/50%);
+}
