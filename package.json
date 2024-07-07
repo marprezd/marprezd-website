@@ -3,9 +3,10 @@
 	"version": "1.0.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
+		"dev": "pnpm generate-json && next dev",
+		"build": "pnpm generate-json && next build",
 		"start": "next start",
+		"generate-json": "node scripts/jsonGenerator.js",
 		"lint": "ESLINT_USE_FLAT_CONFIG=false eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
 	},
 	"dependencies": {
