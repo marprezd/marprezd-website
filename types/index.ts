@@ -4,15 +4,16 @@ export type IconSvgProps = SVGProps<SVGSVGElement> & {
   size?: number
 }
 
-export type WakapiSerie = {
+export type WakapiSummaries = {
   data: {
     data: [
       {
-        editors: [
+        categories: [
           {
             name: string
             total_seconds: number
-          },
+            text: string
+          }
         ]
         languages: [
           {
@@ -20,16 +21,30 @@ export type WakapiSerie = {
             total_seconds: number
           },
         ]
+        grand_total: {
+          minutes: number
+          text: string
+        }
         range: {
-          end: string
+          date: string
           timezone: string
         }
       },
-    ]
+    ],
+    cumulative_total: {
+      seconds: number
+      text: string
+    }
+    daily_average: {
+      days_including_holidays: number
+      days_minus_holidays: number
+      holidays: number
+      seconds: number
+    }
   }
 }
 
-export type Wakapi = {
+export type WakapiStats = {
   data: {
     data: {
       total_seconds: number
