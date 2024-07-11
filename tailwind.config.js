@@ -9,7 +9,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './content/**/*.mdx',
-    './node_modules/@nextui-org/theme/dist/components/(tabs|scroll-shadow|divider|user|chip|pagination|tooltip|card|dropdown|avatar|button|code|input|kbd|link|navbar|snippet|toggle|ripple|spinner|popover).js',
+    './node_modules/@nextui-org/theme/dist/components/(popover|tabs|scroll-shadow|divider|user|chip|pagination|tooltip|card|dropdown|avatar|button|code|input|kbd|link|navbar|snippet|toggle|ripple|spinner|popover).js',
   ],
   theme: {
     container: {
