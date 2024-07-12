@@ -1,0 +1,101 @@
+---
+title: Formatting Output in Java Part 1
+language: en
+otherLanguages:
+  - locale:
+    code: es
+    name: Español
+    path: articulos
+    slug: formatear-la-salida-en-java-parte-1
+  - locale:
+    code: tr
+    name: Türkçe
+    path: makaleler
+    slug: java-bolum-1de-ciktiyi-bicimlendirme
+series:
+  order: 1
+  title: "Formatting Output with Java"
+cover:
+  image: ./java.jpg
+  author: Freepik
+  creditLink: https://www.freepik.com/free-vector/flat-cms-concept-illustrated_13560983.htm
+  hostName: Freepik
+description: Unlock the power of Java's Printstream class! Learn how the printf() and format() methods let you precisely control the formatting of your output.
+date: 2024-07-09 09:24:24
+tags: ["format", "printf", "printstream"]
+categories: ["java"]
+published: true
+section: articles
+---
+
+Unlock the power of Java's Printstream class! Learn how the printf() and format() methods let you precisely control the formatting of your output. Master these essential techniques to create clean, readable code.
+
+## Introduction
+
+Java provides some built-in methods in its standard library that are useful to specify how we want to display the information on the console or in the User Graphical Interface. You can use the `System.out.println()` and `System.out.print()` standard methods described in the following code snippet to display information to the end-user:
+
+
+```java
+public class PrintSomething {
+    public static void main(String[] args) {
+        short num1 = 65, num2 = 5, age = 34;
+        String name = "Tom";
+        System.out.println(num1 + " per " + num2 + " is " + num1 * num2);
+        System.out.println(num1 + " per " + num2 + " is " + num1 * num2);
+    }
+}
+```
+```plain
+Program Output:
+65 per 5 is 325
+Tom is 34 years!
+```
+This approach works fine!
+
+<WarningCallout>
+  If you try to format a floating-point number using *print()* or *println()* methods, you may receive an unexpected result:
+</WarningCallout>
+
+```java
+public class FloatPointNumber {
+    public static void main(String[] args) {
+        double num1 = 14.5, num2 = 2.6;
+         // This line is a bad idea!
+        System.out.println(num1 + " / " + num2 + " = " + num1 / num2);
+    }
+}
+```
+```plain
+Program Output:
+14.5 / 2.6 = 5.576923076923077
+```
+
+Notice that the output shows an unrounded number with many decimal places. It is uneasy to read. Fortunately, there is an elegant way to solve the problem.
+
+## PrintStream class
+
+You have been using the `println()` and `print()` methods to display the output of a program. Both are methods of the **PrintStream** class, which belongs to a package called Java.io[^1]  that contains some Classes related to input and output. PrintStream[^2] also provides methods, such as `format()` and `printf()`, that are useful to specify how a value should be formatted.
+
+`format()` returns a reference to the formatted string, so you must define a variable and store the referenced value in it. Then you can use the variable within the program. Instead, `printf()` prints the formatted string directly to the console.
+
+That said, over here is the syntax that both share.
+
+
+```java
+System.out.printf(FormatString, ArgumentList);
+String.format(FormatString, ArgumentList);
+```
+>
+>The printf() and format() methods of the Java Printstream class provides control over how the values must be formatted.
+>
+
+Both methods admit two arguments. `FormatString` represents a string that includes one or more format specifiers with some optional text. It is a placeholder for the second argument and contains instructions on how it should be formatted. `ArgumentList` refers to any of the data types supported by Java. You can include one or more of them.
+
+## Conclusion
+
+So far, we have briefly reviewed the PrintStream class of the Java programming language. The PrintStream class has two additional methods, `printf()` and `format()`. Both share similar arguments with which we can specify how to format a value. In the next post, we'll learn about the *elements of the format specifier*, along with their meanings.
+
+## Resources
+
+[^1]: [Java.io class](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/package-summary.html).
+[^2]: [PrintStream class](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html)
