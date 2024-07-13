@@ -1,0 +1,189 @@
+{
+  "site": {
+    "metadata": {
+      "title": "Mario Pérez | Desarrollador de software Full Stack",
+      "description": "Soy desarrollador de software y enseño a crear aplicaciones web modernas e interfaces de usuario ingeniosas con Python, Next.js y otras tecnologías web.",
+      "generator": "Mario Pérez - Sitio Web Personal",
+      "ogDescription": "Soy un desarrollador de software y enseño a construir aplicaciones web modernas e interfaces de usuario con Python, Next.js, y otras tecnologías web. Vamos a caminar a través de ejemplos de código real para construir aplicaciones web de principio a fin.",
+      "blog": {
+        "title": "Página de artículo del blog",
+        "description": "Una descripción de mis artículos."
+      }
+    },
+    "sidebar": {
+      "about-me": {
+        "intro": "Hola, soy Mario, un desarrollador de software radicado en Colombia. ¡Bienvenido a mi sitio web!"
+      },
+      "navigation": {
+        "home": "Inicio",
+        "articles": "Artículos",
+        "projects": "Proyectos",
+        "courses": "Cursos",
+        "snippets": "Códigos",
+        "hire_me": "Contratame"
+      }
+    },
+    "hire": "Contratame",
+    "hero": {
+      "title": {
+        "first-line": "Hola,",
+        "gradient": "soy Mario",
+        "second-line": "Bienvenido a mi sitio web, aquí comparto mis pensamientos sobre todo lo relacionado con el desarrollo de software."
+      },
+      "description": "Sumérgete en mi sitio web para ver en profundidad mis últimos artículos, proyectos y actualizaciones de portafolio.",
+      
+      "last_snippets": {
+        "label": "Bloques de código",
+        "cta": "¿Qué hay de nuevo?"
+      }
+    },
+    "about-me": {
+      "started": "Empezar",
+      "tweets": "Tuits",
+      "followers": "Seguidores",
+      "following": "Siguiendo",
+      "experience": "años de experiencia",
+      "bio": "<p>Soy un desarrollador de software autodidacta competente en la creación de aplicaciones e interfaces de usuario utilizando <span>Python</span>, <span>ReactJS</span> y otras <span>tecnologías de software</span>. ¡Con frecuencia comparto mis pensamientos sobre el desarrollo de software en mi sitio web!</p>",
+      "technologies": {
+        "title": "Tecnologías que uso",
+        "description": "Utilizo exclusivamente una pila de tecnologías para crear productos de software."
+      },
+      "metrics": {
+        "title": "Flujo de trabajo y métricas",
+        "description": "Consulte las métricas de mis actividades de programación."
+      },
+      "charts": {
+        "githubContributions": {
+          "title": "Contribuciones en GitHub",
+          "subtitle": "Contribuciones en el último año."
+        },
+        "githubStats": {
+          "title": "Actividades de GitHub",
+          "subtitle": "Resumen de actividades por segmentos.",
+          "stars": "Estrellas",
+          "commitments": "Compromisos",
+          "prs": "Peticiones",
+          "issues": "Problemas",
+          "contributions": "Contribuciones",
+          "total-repos": "Repositorios",
+          "total-followers": "Seguidores"
+        },
+        "programming-languages": {
+          "title": "Lenguajes de programación",
+          "subtitle": "Lenguajes de programación más utilizados."
+        },
+        "best-days": {
+          "title": "Mejores días de codificación",
+          "subtitle": "Mejores días de codificación de la última semana."
+        },
+        "best-days-avgs": {
+          "cumulative-total": {
+            "title": "Total acumulado",
+            "desc": "Resumen del total de horas dedicadas a la codificación."
+          },
+          "difference-48hrs": {
+            "title": "Codificación últimas 48 horas",
+            "desc": "Diferencias en minutos y diferencia porcentual."
+          },
+          "days-without-coding": {
+            "title": "Días sin codificar",
+            "desc": "Porcentaje de días no dedicados a codificar."
+          }
+        }
+      }
+    },
+    "data": {
+      "posts-per-month": "Publicaciones por mes",
+      "last-month": "Últimos 12 meses"
+    },
+    "recent-posts": {
+      "title": "Artículos Recientes",
+      "description": "Descubre nuestros últimos artículos",
+      "cta": "Ver todos los artículos"
+    },
+    "posts": {
+      "index": "Volver al índice",
+      "allPosts": "Todos los artículos",
+      "added": "Añadido",
+      "updated": "Última actualización",
+      "view": "vez leído",
+      "views": "veces leído",
+      "statistics": "Estadísticas",
+      "readingTime": {
+        "label": "Tiempo estimado de lectura",
+        "mins": "minutos de lectura"
+      },
+      "pocket": "Guardar en Pocket",
+      "words": "palabras",
+      "image": {
+        "credit": "Foto de {photographer} en {host}"
+      },
+      "series": {
+        "label": "Series",
+        "title": "Este artículo forma parte de la serie {title}",
+        "episodes": "Episodios",
+        "read-articles": "Leer otros artículos"
+      },
+      "author": {
+        "label": "Autor",
+        "role": "Desarrollador de software",
+        "summary": "<p>Mario Pérez es un desarrollador de software radicado en Colombia. De vez en cuando escribe artículos sobre cómo crear aplicaciones web modernas utilizando <span>Python, Next.js y otras tecnologías web</span>. En su tiempo libre se mantiene activo trotando, yendo al gimnasio o montando en bicicleta.</p>",
+        "cta": "Seguir leyendo"
+      },
+      "available_lang": "<p>Lea este artículo en <loc>Inglés</loc> o <loc>Turco</loc></p>",
+      "available_in": "También disponible en",
+      "load_comments": "Cargar comentarios",
+      "next": "Artículo mas reciente",
+      "prev": "Artículo mas antiguo",
+      "similar_posts": {
+        "title": "¡Sigue leyendo!..."
+      },
+      "read-more": "Seguir leyendo",
+      "toc": {
+        "label": "En esta página"
+      },
+      "share": {
+        "label": "Compartir",
+        "desc": "<p><b>¿Estás interesado en ayudar a difundir información valiosa?</b> Entonces, ¡no te guardes este artículo! <span>Compártelo en tus redes sociales</span> y ayuda a que muchas personas se beneficien de él. Recuerde, ¡su parte puede marcar la diferencia!</p>"
+      },
+      "tags": {
+        "seo": {
+          "title": "Página de etiquetas",
+          "description": "Explore todos los artículos por etiqueta."
+        },
+        "all_tags": "Todas las etiquetas",
+        "header_title": "Etiquetas principales"
+      },
+      "callouts": {
+        "info": "Nota de información",
+        "warning": "Nota de advertencia",
+        "success": "Nota de éxito",
+        "danger": "Nota de peligro"
+      },
+      "pagination": "Mostrando de {start, number} a {middle, number} de un total de {end, plural, =1 {1 resultado} other {# resultados}}"
+    }, 
+    "sponsor": {
+      "label": "Conviértete en patrocinador",
+      "desc": "Si alguna de mis contribuciones a este sitio web le ha resultado útil, le agradecería mucho que pudiera apoyarme.",
+      "cta-button": "Patrociname"
+    },
+    "newsletter": {
+      "title": "¡Obtén las últimas actualizaciones!",
+      "desc": "Suscríbete a nuestro newsletter y mantente actualizado sobre las últimas novedades.",
+      "cta-btn": "Suscribir"
+    },
+    "license": "<p>El contenido de este sitio web está bajo una <url>licencia CC BY 4.0</url></p>",
+    "footer-nav": {
+      "courses": "Cursos",
+      "guest-book": "Libro de visitas"
+    },
+    "Error": {
+      "title": "¡Algo salió mal!",
+      "description": "<p>Desafortunadamente hemos encontrado un error.</p><p>Puedes intentar <retry>recargar la página</retry> que estabas visitando.</p>"
+    },
+    "NotFoundPage": {
+      "title": "Página no encontrada",
+      "description": "Vuelva a verificar la barra de direcciones del navegador o utilice la navegación para ir a una página conocida."
+    }
+  }
+}

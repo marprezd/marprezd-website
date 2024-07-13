@@ -1,0 +1,176 @@
+{
+  "site": {
+    "metadata": {
+      "title": "Mario Perez | Full Stack Software Developer",
+      "description": "I am a self-taught full-stack developer based in Barranquilla, Colombia and teach to build modern web apps and slick user interfaces with Python, Nuxt.js, and other web technologies",
+      "generator": "Mario Pérez - Personal Website",
+      "ogDescription": "I am a Software developer and teach to build modern web apps and slick user interfaces with Python, Next.js, and other web technologies. We'll walk through real code examples to build web apps from start to finish.",
+      "blog": {
+        "title": "Blog Article Page",
+        "description": "A description of the my articles"
+      }
+    },
+    "sidebar": {
+      "about-me": {
+        "intro": "Hello, I'm Mario, a software developer based in Colombia. Welcome to my website!"
+      },
+      "navigation": {
+        "home": "Home",
+        "articles": "Articles",
+        "projects": "Projects",
+        "courses": "Courses",
+        "snippets": "Snippets",
+        "hire_me": "Hire me"
+      }
+    },
+    "hire": "Hire me",
+    "about-me": {
+      "started": "Get started",
+      "tweets": "Tweets",
+      "followers": "Followers",
+      "following": "Following",
+      "experience": "years of experience",
+      "bio": "<p>I am a self-taught software developer proficient in building applications and user interfaces using <span>Python</span>, <span>ReactJS</span>, and other <span>software technologies</span>. I frequenly share my thoughts on software development on my website!</p>",
+      "technologies": {
+        "title": "Technologies I use",
+        "description": "I exclusively use a stack of technologies to create software products."
+      },
+      "metrics": {
+        "title": "Workflow and metrics",
+        "description": "Check out the metrics of my programming activities."
+      },
+      "charts": {
+        "githubContributions": {
+          "title": "GitHub contributions",
+          "subtitle": "Contributions in the last year."
+        },
+        "githubStats": {
+          "title": "GitHub activities",
+          "subtitle": "Overview of activities by segment.",
+          "stars": "Stars",
+          "commitments": "Commitments",
+          "prs": "Requests",
+          "issues": "Issues",
+          "contributions": "Contributions",
+          "total-repos": "Repositories",
+          "total-followers": "Followers"
+        },
+        "programming-languages": {
+          "title": "Programming languages",
+          "subtitle": "Most used programming languages."
+        },
+        "best-days": {
+          "title": "Best coding days",
+          "subtitle": "Best coding days in the last week."
+        },
+        "best-days-avgs": {
+          "cumulative-total": {
+            "title": "Cumulative total",
+            "desc": "Summary of total hours spent coding."
+          },
+          "difference-48hrs": {
+            "title": "Coding in the last 48 hours",
+            "desc": "Differences in minutes and percentage difference."
+          },
+          "days-without-coding": {
+            "title": "Days without coding",
+            "desc": "Percentage of days not spent coding."
+          }
+        }
+      }
+    },
+    "data": {
+      "posts-per-month": "Posts per month",
+      "last-month": "Last 12 month"
+    },
+    "recent-posts": {
+      "title": "Recent articles",
+      "description": "Discover our latest articles",
+      "cta": "View all articles"
+    },
+    "posts": {
+      "index": "Back to the index",
+      "allPosts": "All posts",
+      "added": "Added",
+      "updated": "Last updated",
+      "view": "time read",
+      "views": "times read",
+      "statistics": "Statistics",
+      "readingTime": {
+        "label": "Estimated reading time",
+        "mins": "mins read"
+      },
+      "pocket": "Saved to Pocket",
+      "words": "words",
+      "image": {
+        "credit": "Photo by {photographer} on {host}"
+      },
+      "series": {
+        "label": "Series",
+        "title": "This post is part of the serie {title}",
+        "episodes": "Episodes",
+        "read-articles": "Read other articles"
+      },
+      "author": {
+        "label": "Author",
+        "role": "Software Developer",
+        "summary": "<p>Mario Pérez is a software developer who is based in Colombia. He occasionally writes articles about how to build modern web applications using <span>Python, Next.js, and other web tech</span>. In his free time, he stays active by jogging, going to the gym, or cycling.</p>",
+        "cta": "Read more"
+      },
+      "available_lang": "<p>Read this article in <loc>Spanish</loc> or <loc>Turkish</loc></p>",
+      "available_in": "Other languages:",
+      "load_comments": "Load comments",
+      "next": "Most recent article",
+      "prev": "Oldest article",
+      "similar_posts": {
+        "title": "Keep on reading!..."
+      },
+      "read-more": "Read more",
+      "toc": {
+        "label": "On this page"
+      },
+      "share": {
+        "label": "Share",
+        "desc": "<p><b>Are you interested in helping spread valuable information?</b> Then, don't keep this article to yourself! <span>Share it on your social networks</span> and help many people benefit from it. Remember, your share can make a difference!</p>"
+      },
+      "tags": {
+        "seo": {
+          "title": "Tags page",
+          "description": "Browse all items by tag."
+        },
+        "all_tags": "All Tags",
+        "header_title": "Top tags"
+      },
+      "callouts": {
+        "info": "Info note",
+        "warning": "Warning note",
+        "success": "Success note",
+        "danger": "Danger note"
+      },
+      "pagination": "Showing {start, number} to {middle, number} out of a total of {end, plural, =1 {1 result} other {# results}}"
+    },
+    "sponsor": {
+      "label": "Become a sponsor",
+      "desc": "If you have found any of my contributions to this website helpful, I would be extremely grateful if you could support me.",
+      "cta-button": "Sponsor me"
+    },
+    "newsletter": {
+      "title": "Get the latest updates!",
+      "desc": "Subscribe to our newsletter and stay updated on the latest developments.",
+      "cta-btn": "Subscribe"
+    },
+    "license": "<p>The content on this website is licensed under a <url>CC BY 4.0 license</url></p>",
+    "footer-nav": {
+      "courses": "Courses",
+      "guest-book": "Guest book"
+    },
+    "Error": {
+      "title": "Something went wrong!",
+      "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
+    },
+    "NotFoundPage": {
+      "title": "Page not found",
+      "description": "Please double-check the browser address bar or use the navigation to go to a known page."
+    }
+  }
+}

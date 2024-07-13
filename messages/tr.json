@@ -1,0 +1,176 @@
+{
+  "site": {
+    "metadata": {
+      "title": "Mario Pérez | Full Stack Yazılım Geliştirici",
+      "description": "Yazılım geliştiricisiyim ve Python, Nuxt.js ve diğer web teknolojileri ile modern web uygulamaları ve şık kullanıcı arayüzleri oluşturmayı öğretiyorum",
+      "generator": "Mario Pérez - Kişisel web sitesi",
+      "ogDescription": "Ben bir Yazılım geliştiricisiyim ve Python, Nuxt.js ve diğer web teknolojileri ile modern web uygulamaları ve şık kullanıcı arayüzleri oluşturmayı öğretiyorum. Baştan sona web uygulamaları oluşturmak için gerçek kod örnekleri üzerinden yürüyeceğiz.",
+      "blog": {
+        "title": "Blog Makale Sayfası",
+        "description": "Makalelerimin açıklaması"
+      }
+    },
+    "sidebar": {
+      "about-me": {
+        "intro": "Merhaba, ben Mario, Kolombiya merkezli bir yazılım geliştiricisiyim. Web siteme hoş geldiniz!"
+      },
+      "navigation": {
+        "home": "Anasayfa",
+        "articles": "Makaleler",
+        "projects": "Projeler",
+        "courses": "Dersler",
+        "snippets": "Parçacıklar",
+        "hire_me": "Beni işe al"
+      }
+    },
+    "hire": "Beni işe al",
+    "about-me": {
+      "started": "Başlayın",
+      "tweets": "Tweetler",
+      "followers": "Takipçiler",
+      "following": "Takip edilen",
+      "experience": "yılların deneyimi",
+      "bio": "<p><span>Python</span>, <span>ReactJS</span> ve diğer <span>yazılım teknolojilerini</span> kullanarak uygulamalar ve kullanıcı arayüzleri oluşturma konusunda yetkin, kendi kendini yetiştirmiş bir yazılım geliştiricisiyim. Yazılım geliştirme konusundaki düşüncelerimi web sitemde sıklıkla paylaşıyorum!</p>",
+      "technologies": {
+        "title": "Kullandığım teknolojiler",
+        "description": "Yazılım ürünleri oluşturmak için yalnızca bir dizi teknoloji kullanıyorum."
+      },
+      "metrics": {
+        "title": "İş akışı ve ölçümler",
+        "description": "Programlama faaliyetlerimin ölçümlerine göz atın."
+      },
+      "charts": {
+        "githubContributions": {
+          "title": "GitHub katkıları",
+          "subtitle": "Geçen yılki katkılar."
+        },
+        "githubStats": {
+          "title": "GitHub etkinlikleri",
+          "subtitle": "Segmentlere göre faaliyetlere genel bakış.",
+          "stars": "Yıldızlar",
+          "commitments": "Taahhütler",
+          "prs": "Dilekçeler",
+          "issues": "Sorunlar",
+          "contributions": "katkılar",
+          "total-repos": "Projeler",
+          "total-followers": "Takipçiler"
+        },
+        "programming-languages": {
+          "title": "Programlama dilleri",
+          "subtitle": "En çok kullanılan programlama dilleri | dakikalar içinde."
+        },
+        "best-days": {
+          "title": "En iyi kodlama günleri",
+          "subtitle": "Geçen haftanın en iyi kodlama günleri."
+        },
+        "best-days-avgs": {
+          "cumulative-total": {
+            "title": "Birikimli toplam",
+            "desc": "Kodlama için harcanan toplam saatlerin özeti."
+          },
+          "difference-48hrs": {
+            "title": "Son 48 saatteki kodlama",
+            "desc": "Dakika farkları ve yüzde farkları."
+          },
+          "days-without-coding": {
+            "title": "Kodlamasız günler",
+            "desc": "Kodlamaya harcanmayan günlerin yüzdesi."
+          }
+        }
+      }
+    },
+    "data": {
+      "posts-per-month": "Aylık gönderiler",
+      "last-month": "Son 12 ay"
+    },
+    "recent-posts": {
+      "title": "Son Makaleler",
+      "description": "En son makalelerimizi keşfedin",
+      "cta": "Tüm makaleleri görüntüle"
+    },
+    "posts": {
+      "index": "Dizine geri dön",
+      "allPosts": "Tüm gönderiler",
+      "added": "Eklendi",
+      "updated": "Son güncelleme",
+      "view": "kez okundu",
+      "views": "kez okundu",
+      "statistics": "İstatistik",
+      "readingTime": {
+        "label": "Tahmini okuma süresi",
+        "mins": "dakika okumak"
+      },
+      "pocket": "Pocket'a kaydedin",
+      "words": "kelimeler",
+      "image": {
+        "credit": "Fotoğraf: {photographer}, {host}"
+      },
+      "series": {
+        "label": "Seri",
+        "title": "Bu yazı {title} serisinin bir parçasıdır.",
+        "episodes": "Bölümler",
+        "read-articles": "Diğer makaleleri okuyun"
+      },
+      "author": {
+        "label": "Yazar",
+        "role": "Yazılım Geliştirici",
+        "summary": "<p>Mario Perez, Kolombiya merkezli bir yazılım geliştiricisidir. Zaman zaman <span>Python, Next.js ve diğer web teknolojilerini</span> kullanarak modern web uygulamalarının nasıl oluşturulacağı hakkında makaleler yazıyor. Boş zamanlarında koşarak, spor salonuna giderek veya bisiklete binerek aktif kalıyor.</p>",
+        "cta": "Devamını oku"
+      },
+      "available_lang": "<p>Bu makaleyi <loc>İngilizce</loc> veya <loc>İspanyolca</loc> okuyun</p>",
+      "available_in": "Ayrıca mevcut",
+      "load_comments": "Yorumları yükle",
+      "next": "En yeni makale",
+      "prev": "En eski makale",
+      "similar_posts": {
+        "title": "Okumaya devam edin!..."
+      },
+      "read-more": "Devamını oku",
+      "toc": {
+        "label": "Bu sayfada"
+      },
+      "share": {
+        "label": "Paylaşmak",
+        "desc": "<p><b>Değerli bilgilerin yayılmasına yardımcı olmakla ilgileniyor musunuz?</b> O halde bu yazıyı kendinize saklamayın! <span>Sosyal ağlarınızda paylaşın</span> ve birçok kişinin bundan faydalanmasına yardımcı olun. Unutmayın, paylaşımınız fark yaratabilir!</p>"
+      },
+      "tags": {
+        "seo": {
+          "title": "Etiketler sayfası",
+          "description": "Etikete göre tüm ürünlere göz atın."
+        },
+        "all_tags": "Tüm Etiketler",
+        "header_title": "Üst Etiketler"
+      },
+      "callouts": {
+        "info": "Bilgi notu",
+        "warning": "Uyarı notu",
+        "success": "Başarı notu",
+        "danger": "Tehlike notu"
+      },
+      "pagination": "Toplam {end, plural, =1 {1 sonuçtan} other {# sonuçtan}} {start, number} ila {middle, number} arası gösteriliyor"
+    },
+    "sponsor": {
+      "label": "Sponsor olun",
+      "desc": "Bu web sitesine yaptığım katkılardan herhangi birini yararlı bulduysanız, beni desteklerseniz son derece minnettar olurum.",
+      "cta-button": "Bana sponsor ol"
+    },
+    "newsletter": {
+      "title": "En son güncellemeleri alın!",
+      "desc": "Bültenimize abone olun ve en son haberlerden haberdar olun.",
+      "cta-btn": "Abone"
+    },
+    "license": "<p>Bu web sitesindeki içerik <url>CC BY 4.0 lisansı</url> kapsamında lisanslanmıştır</p>",
+    "footer-nav": {
+      "courses": "Dersler",
+      "guest-book": "Ziyaretçi defteri"
+    },
+    "Error": {
+      "title": "Bir şeyler yanlış gitti!",
+      "description": "<p>Maalesef bir hatayla karşılaştık.</p><p>Ziyaret ettiğiniz <retry>sayfayı yeniden yüklemeyi</retry> deneyebilirsiniz.</p>"
+    },
+    "NotFoundPage": {
+      "title": "Sayfa bulunamadı",
+      "description": "Lütfen tarayıcının adres çubuğunu tekrar kontrol edin veya bilinen bir sayfaya gitmek için gezinmeyi kullanın."
+    }
+  }
+}
