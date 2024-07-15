@@ -51,6 +51,11 @@ export const pathnames = {
     es: '/etiquetas',
     tr: '/etiketler',
   },
+  '/guest-book': {
+    en: '/guest-book',
+    es: '/libro-de-visitas',
+    tr: '/ziyaretci-defteri',
+  },
   '[...rest]': '[...rest]',
 } satisfies Pathnames<typeof locales>
 
