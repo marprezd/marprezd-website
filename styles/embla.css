@@ -4,8 +4,8 @@
   @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
 */
 .embla {
-  @apply max-w-screen-md m-auto;
-  --slide-height: auto;
+  @apply max-w-lg m-auto;
+  --slide-height: 15rem;
   --slide-spacing: 1rem;
   --slide-size: 100%;
 }
@@ -21,15 +21,13 @@
   @apply flex-[0_0_var(--slide-size)] min-h-0 pt-[var(--slide-spacing)];
 }
 .embla__controls {
-  @apply grid grid-cols-[auto_1fr] justify-between gap-5;
+  @apply grid grid-cols-[auto_1fr] justify-between gap-5 mt-1;
 }
 .embla__buttons {
   @apply grid grid-cols-2 gap-[0.6rem] items-center;
 }
 .embla__button {
   @apply border border-default-300 appearance-none bg-transparent touch-manipulation inline-flex no-underline cursor-pointer shadow-[inset_0_0_0_0.2rem_var(--nextui-default-300)] size-9 z-[1] items-center justify-center m-0 p-0 rounded-[50%] disabled:text-neutral-400 dark:disabled:text-neutral-700;
-  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
-  -webkit-appearance: none;
 }
 .embla__button__svg {
   @apply w-[35%] h-[35%];
