@@ -7,14 +7,14 @@ export type IconSvgProps = SVGProps<SVGSVGElement> & {
 export type WakapiSummaries = {
   data: {
     data: [
-      {      
+      {
         grand_total: {
           hours: number
-        },
+        }
         range: {
           start: string
         }
-      }
+      },
     ]
     cumulative_total: {
       text: string
