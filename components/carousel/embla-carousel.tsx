@@ -30,23 +30,25 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   } = usePrevNextButtons(emblaApi)
 
   return (
-    <section className="embla">
-      <div className="mb-4 flex flex-row items-center justify-between">
-        <h2 className="text-lg text-neutral-800 dark:text-neutral-200">{t('posts.similar_posts.title')}</h2>
+    <section>
+      <h2 className="text-xl font-bold text-neutral-800 dark:text-neutral-200 mb-4">
+        {t('posts.similar_posts.title')}
+      </h2>
+      <div className="embla">
+        <div ref={emblaRef} className="embla__viewport">
+          <div className="embla__container">
+            {posts.slice(0, 6).map(post => (
+              <div key={post.slug} className="embla__slide">
+                <PostCard post={post} shadow="none" />
+              </div>
+            ))}
+          </div>
+        </div>
         <div className="embla__controls">
           <div className="embla__buttons">
             <PrevButton disabled={prevBtnDisabled} onClick={onPrevButtonClick} />
             <NextButton disabled={nextBtnDisabled} onClick={onNextButtonClick} />
           </div>
-        </div>
-      </div>
-      <div ref={emblaRef} className="embla__viewport">
-        <div className="embla__container">
-          {posts.slice(0, 6).map(post => (
-            <div key={post.slug} className="embla__slide">
-              <PostCard post={post} shadow="none" />
-            </div>
-          ))}
         </div>
       </div>
     </section>
