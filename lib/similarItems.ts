@@ -21,7 +21,7 @@ const similerItems = (
 
   // filter by categories
   const filterByCategories = allItems.filter((item: any) =>
-    categories.find((category) => item.categories.includes(category))
+    categories.find(category => item.categories.includes(category)),
   )
 
   // filter by tags
@@ -30,7 +30,7 @@ const similerItems = (
   )
 
   // merged after filter
-  const mergedItems = [...new Set([...filterByCategories,...filterByTags])]
+  const mergedItems = [...new Set([...filterByCategories, ...filterByTags])]
 
   // filter by slug
   const filterBySlug = mergedItems.filter(product => product.slug !== slug)
