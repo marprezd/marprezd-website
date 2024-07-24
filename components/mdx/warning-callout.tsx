@@ -10,7 +10,7 @@ function WarningCallout({ children }: CalloutProps) {
 
   return (
     <div
-      className="not-prose rounded-lg border-t-2 border-yellow-500 bg-yellow-50 p-4 dark:bg-yellow-800/30"
+      className="not-prose rounded-lg border-t-2 border-yellow-500 bg-yellow-50 p-4 dark:bg-yellow-800"
       role="alert"
     >
       <div className="flex">
@@ -20,10 +20,10 @@ function WarningCallout({ children }: CalloutProps) {
           </span>
         </div>
         <div className="ms-3">
-          <h3 className="font-semibold text-gray-800 dark:text-white">
+          <h3 className="font-semibold text-yellow-900 dark:text-white">
             {t('posts.callouts.warning')}
           </h3>
-          <div className="text-sm text-gray-700 dark:text-neutral-400">
+          <div className="text-sm text-yellow-800 dark:text-yellow-100">
             {children}
           </div>
         </div>

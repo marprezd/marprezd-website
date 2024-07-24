@@ -10,7 +10,7 @@ function DangerCallout({ children }: CalloutProps) {
 
   return (
     <div
-      className="not-prose rounded-lg border-t-2 border-red-500 bg-red-50 p-4 dark:bg-red-800/30"
+      className="not-prose rounded-lg border-t-2 border-red-500 bg-red-50 p-4 dark:bg-red-800"
       role="alert"
     >
       <div className="flex">
@@ -20,10 +20,10 @@ function DangerCallout({ children }: CalloutProps) {
           </span>
         </div>
         <div className="ms-3">
-          <h3 className="font-semibold text-gray-800 dark:text-white">
+          <h3 className="font-semibold text-red-800 dark:text-white">
             {t('posts.callouts.danger')}
           </h3>
-          <div className="text-sm text-gray-700 dark:text-neutral-400">
+          <div className="text-sm text-red-700 dark:text-red-400">
             {children}
           </div>
         </div>

@@ -30,8 +30,8 @@ const Link = forwardRef<HTMLAnchorElement, LinkProps>((
     >
       {children}
       {isExternalLink && showIcon && (
-        <span className="inline-flex text-[0.7em]">
-          <IconArrowUpRight />
+        <span className="inline-flex">
+          <IconArrowUpRight className='size-4' />
         </span>
       )}
     </Link>

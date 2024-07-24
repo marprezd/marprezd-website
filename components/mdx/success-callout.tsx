@@ -10,7 +10,7 @@ function SuccessCallout({ children }: CalloutProps) {
 
   return (
     <div
-      className="not-prose rounded-lg border-t-2 border-teal-500 bg-teal-50 p-4 dark:bg-teal-800/30"
+      className="not-prose rounded-lg border-t-2 border-teal-500 bg-teal-50 p-4 dark:bg-teal-800"
       role="alert"
     >
       <div className="flex">
@@ -20,10 +20,11 @@ function SuccessCallout({ children }: CalloutProps) {
           </span>
         </div>
         <div className="ms-3">
-          <h3 className="font-semibold text-gray-800 dark:text-white">
-            {t('posts.callouts.success')}.
+          <h3 className="font-semibold text-teal-800 dark:text-white">
+            {t('posts.callouts.success')}
+            .
           </h3>
-          <div className="text-sm text-gray-700 dark:text-neutral-400">
+          <div className="text-sm text-teal-700 dark:text-teal-400">
             {children}
           </div>
         </div>

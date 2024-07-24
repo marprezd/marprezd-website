@@ -10,7 +10,7 @@ function InfoCallout({ children }: CalloutProps) {
 
   return (
     <div
-      className="not-prose rounded-lg border-t-2 border-blue-500 bg-blue-50 p-4 dark:bg-blue-800/30"
+      className="not-prose rounded-lg border-t-2 border-blue-500 bg-blue-50 p-4 dark:bg-blue-800"
       role="alert"
     >
       <div className="flex">
@@ -20,10 +20,10 @@ function InfoCallout({ children }: CalloutProps) {
           </span>
         </div>
         <div className="ms-3">
-          <h3 className="font-semibold text-gray-800 dark:text-white">
+          <h3 className="font-semibold text-blue-800 dark:text-white">
             {t('posts.callouts.info')}
           </h3>
-          <div className="text-sm text-gray-700 dark:text-neutral-400">
+          <div className="text-sm text-blue-700 dark:text-blue-400">
             {children}
           </div>
         </div>
