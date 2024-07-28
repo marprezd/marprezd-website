@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 'use client'
 
-import { Image } from "@nextui-org/image";
+import { Image } from '@nextui-org/image'
 import { useEffect, useState } from 'react'
 
 const ImageFallback = (props: any) => {
