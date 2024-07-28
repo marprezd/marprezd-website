@@ -3,10 +3,9 @@
 	"version": "1.0.0",
 	"private": true,
 	"scripts": {
-		"dev": "pnpm generate-json && next dev",
-		"build": "pnpm generate-json && next build",
+		"dev": "next dev",
+		"build": "next build",
 		"start": "next start",
-		"generate-json": "node scripts/jsonGenerator.js",
 		"lint": "ESLINT_USE_FLAT_CONFIG=false eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
 	},
 	"dependencies": {
@@ -65,6 +64,7 @@
 		"eslint-plugin-react-hooks": "^4.6.2",
 		"eslint-plugin-unused-imports": "^3.2.0",
 		"framer-motion": "^11.3.12",
+		"fuse.js": "^7.0.0",
 		"github-slugger": "^2.0.0",
 		"gray-matter": "^4.0.3",
 		"image-size": "^1.1.1",
