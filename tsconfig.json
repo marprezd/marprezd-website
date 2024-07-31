@@ -1,15 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -20,8 +18,7 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"],
-      "#site/content": ["./.velite"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

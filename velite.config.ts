@@ -33,16 +33,13 @@ const options: Partial<Options> = {
   onVisitLine(node: any) {
     // Prevent lines from collapsing in `display: grid` mode, and
     // allow empty lines to be copy/pasted
-    if (node.children.length === 0)
-      node.children = [{ type: 'text', value: ' ' }]
+    if (node.children.length === 0) node.children = [{ type: 'text', value: ' ' }]
   },
   onVisitHighlightedLine(node: any) {
     const nodeClass = node.properties.className
 
-    if (nodeClass && nodeClass.length > 0)
-      node.properties.className.push('line--highlighted')
-    else
-      node.properties.className = ['line--highlighted']
+    if (nodeClass && nodeClass.length > 0) node.properties.className.push('line--highlighted')
+    else node.properties.className = ['line--highlighted']
   },
 
   onVisitHighlightedChars(node: any, id) {
@@ -86,34 +83,6 @@ const series = s
     order: s.number(),
   }).optional()
 
-// const projects = defineCollection({
-//   name: 'Project',
-//   pattern: 'projects/**/*.mdx',
-//   schema: s
-//     .object({
-//       slug: s.path(),
-//       title: s.string().max(99),
-//       language: s.string(),
-//       otherLanguages: s.array(locale),
-//       cover: s.image(),
-//       excerpt: s.excerpt(),
-//       description: s.string().max(999).optional(),
-//       date: s.isodate(),
-//       client: s.string(),
-//       industry: s.string(),
-//       size: s.number(),
-//       website: s.string(),
-//       published: s.boolean().default(true),
-//       tags: s.array(s.string()).default([]),
-//       body: s.mdx(),
-//       toc: s.toc(),
-//       metadata: s.metadata(),
-//       section: s.string(),
-//     })
-//     .transform(computedFields),
-
-// })
-
 const posts = defineCollection({
   name: 'Post',
   pattern: 'articles/**/*.mdx',
@@ -141,7 +110,7 @@ const posts = defineCollection({
 })
 
 export default defineConfig({
-  root: 'content',
+  root: 'src/content',
   output: {
     data: '.velite',
     assets: 'public/static',
@@ -160,8 +129,7 @@ export default defineConfig({
           if (node?.type === 'element' && node?.tagName === 'pre') {
             const [codeEl] = node.children
 
-            if (codeEl.tagName !== 'code')
-              return
+            if (codeEl.tagName !== 'code') return
 
             if (codeEl.data?.meta) {
               // Extract event from meta and pass it down the tree.
@@ -184,13 +152,11 @@ export default defineConfig({
       () => (tree) => {
         visit(tree, (node) => {
           if (node?.type === 'element' && node?.tagName === 'div') {
-            if (!('data-rehype-pretty-code-fragment' in node.properties))
-              return
+            if (!('data-rehype-pretty-code-fragment' in node.properties)) return
 
             const preElement = node.children.at(-1)
 
-            if (preElement.tagName !== 'pre')
-              return
+            if (preElement.tagName !== 'pre') return
 
             preElement.properties.__rawString__ = node.__rawString__
           }

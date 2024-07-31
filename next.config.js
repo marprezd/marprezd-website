@@ -1,7 +1,6 @@
-const { hostname } = require('os')
-
 /** @type {import('next').NextConfig} */
-const withNextIntl = require('next-intl/plugin')()
+const createNextIntlPlugin = require('next-intl/plugin');
+const withNextIntl = createNextIntlPlugin();
 
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
@@ -51,14 +50,6 @@ const securityHeaders = [
   },
 ]
 
-/* module.exports = {
-  // othor next config here...
-  webpack: config => {
-    config.plugins.push(new VeliteWebpackPlugin())
-    return config
-  }
-} */
-
 class VeliteWebpackPlugin {
   static started = false
   apply(/** @type {import('webpack').Compiler} */ compiler) {
@@ -77,6 +68,9 @@ class VeliteWebpackPlugin {
 const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  experimental: {
+    optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
+  },
   eslint: {
     dirs: ['src', 'script'],
   },

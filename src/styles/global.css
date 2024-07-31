@@ -1,0 +1,4 @@
+@import "@mantine/core/styles.css";
+@import "./tailwind.css";
+@import "./config.css";
+@import "./markdown.css";
