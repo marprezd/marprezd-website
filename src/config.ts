@@ -1,17 +1,10 @@
-import type { Pathnames } from 'next-intl/routing'
-
-// Server URL
-const dev = process.env.NODE_ENV !== 'production'
-
-export const server = dev
-  ? 'http://localhost:3000'
-  : process.env.SITE_URL || 'https://marprezd.vercel.app'
+import { Pathnames, LocalePrefix } from 'next-intl/routing'
 
 // Locales from Next Intl
+export const defaultLocale = 'en' as const
 export const locales = ['en', 'es', 'tr'] as const
-export type LocaleTypes = (typeof locales)[number]
 
-export const pathnames = {
+export const pathnames: Pathnames<typeof locales> = {
   '/': '/',
 
   // If locales use different paths, you can
@@ -27,7 +20,7 @@ export const pathnames = {
     tr: '/sayfa/makaleler',
   },
   '/page/articles/[slug]': {
-    en: '/page/articls/[slug]',
+    en: '/page/articles/[slug]',
     es: '/pagina/articulos/[slug]',
     tr: '/sayfa/makaleler/[slug]',
   },
@@ -62,9 +55,7 @@ export const pathnames = {
     tr: '/sayfa/ziyaretci-defteri',
   },
   '[...rest]': '[...rest]',
-} satisfies Pathnames<typeof locales>
+}
 
 // Use the default: `always`
-export const localePrefix = 'always'
-
-export type AppPathnames = keyof typeof pathnames
+export const localePrefix: LocalePrefix<typeof locales> = 'always'
