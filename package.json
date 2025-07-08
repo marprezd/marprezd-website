@@ -1,0 +1,46 @@
+{
+  "name": "marprezd-website",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@10.12.4",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "npx nuxthub preview",
+    "deploy": "npx nuxthub deploy",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@nuxt/content": "3.6.3",
+    "@nuxt/eslint": "^1.5.2",
+    "@nuxt/image": "1.10.0",
+    "@nuxt/ui": "3.2.0",
+    "@nuxthub/core": "^0.9.0",
+    "nuxt": "^3.17.6",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.16.2",
+    "@nuxt/eslint-config": "^1.5.2",
+    "@tailwindcss/typography": "^0.5.16",
+    "eslint": "^9.30.1",
+    "eslint-plugin-format": "^1.0.1",
+    "typescript": "^5.8.3",
+    "vue-tsc": "^2.2.12",
+    "wrangler": "^4.23.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@tailwindcss/oxide",
+      "esbuild",
+      "sharp",
+      "unrs-resolver",
+      "vue-demi",
+      "workerd"
+    ]
+  }
+}
