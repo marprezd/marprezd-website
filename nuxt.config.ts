@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     kv: true,
     blob: true,
     cache: true,
+    workers: true,
   },
   ui: {
     theme: {
