@@ -13,7 +13,6 @@ export default defineNuxtConfig({
   hub: {
     database: true,
     kv: true,
-    blob: true,
     cache: true,
     workers: true,
   },
