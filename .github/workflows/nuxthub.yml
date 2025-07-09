@@ -30,5 +30,6 @@ jobs:
       - name: Build & Deploy to NuxtHub
         uses: nuxt-hub/action@v2
         with:
+          directory: ""
           output-directory: dist
           project-key: marprezd-websit-vwwd
