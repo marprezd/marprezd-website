@@ -26,3 +26,6 @@ logs
 
 # NuxtHub
 .data/hub
+
+# GitHub Workspace
+*.code-workspace
