@@ -18,7 +18,7 @@ export default defineNuxtConfig({
       helloText: 'Hello from the Edge',
       i18n: {
         baseUrl: host,
-      }
+      },
     },
   },
   future: { compatibilityVersion: 4 },
@@ -43,24 +43,13 @@ export default defineNuxtConfig({
     },
   },
   app: {
-    pageTransition: {
-      name: 'fade',
-      mode: 'out-in',
-      type: 'animation',
-      appear: true,
-      appearToClass: 'fade-in',
-      appearActiveClass: 'fade-in-active',
-      enterToClass: 'fade-in',
-      enterActiveClass: 'fade-in-active',
-      leaveToClass: 'fade-out',
-      leaveActiveClass: 'fade-out-active',
-    },
-    layoutTransition: false,
+    // Page transitions are handled by motion-v in app/app.vue
+    // If you wish to configure transitions, edit the motion.div in app.vue
     head: {
-      titleTemplate: '%s - Mario Pérez',
+      // titleTemplate: '%s - Mario Pérez',
       meta: [
         { name: 'author', content: 'Mario Pérez' },
-        { name: 'charset', content: 'utf-8' },
+        // { name: 'charset', content: 'utf-8' },
         { name: 'theme-color', content: '#14b8a6' },
       ],
     },
@@ -99,7 +88,6 @@ export default defineNuxtConfig({
     },
   },
   i18n: {
-    // baseUrl: 'https://marprezd.dev',
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
     customRoutes: 'config', // disable custom route with page components
@@ -174,6 +162,11 @@ export default defineNuxtConfig({
         en: '/github-repositories',
         es: '/repositorios-de-github',
         tr: '/github-depoları',
+      },
+      'guestbook': {
+        en: '/guestbook',
+        es: '/libro-de-visitas',
+        tr: '/misafir-kitabı',
       },
     },
     lazy: true,
