@@ -1,3 +1,72 @@
 {
-  "home": "inicio"
+  "home": "inicio",
+  "app": {
+    "metadata": {
+      "homepage": {
+        "title": "Página de inicio",
+        "description": "Visita mi sitio web para explorar proyectos y artículos sobre Python, Next.js y más para crear increíbles aplicaciones web.",
+        "generator": "Mario Pérez - Sitio web personal"
+      }
+    },
+    "menu": {
+      "items": {
+        "home": {
+          "label": "Inicio"
+        },
+        "pages": {
+          "label": "Páginas",
+          "items": {
+            "works": {
+              "label": "Trabajos",
+              "description": "Aplicaciones web y otro software que he desarrollado."
+            },
+            "resources": {
+              "label": "Recursos",
+              "description": "Libros imprescindibles que no debe perderse."
+            },
+            "hire": {
+              "label": "Contrátame",
+              "description": "Hablemos de tu próximo proyecto de software."
+            },
+            "repositories": {
+              "label": "Github Repositories",
+              "description": "Listado de cartera de proyectos de código abierto"
+            }
+          }
+        },
+        "tutorials": {
+          "label": "Tutoriales",
+          "items": {
+            "courses": {
+              "label": "Cursos",
+              "description": "Cursos relacionados con las tecnologías de la información."
+            },
+            "blog": {
+              "label": "Blog",
+              "description": "Artículos técnicos para ingenieros de software."
+            }
+          }
+        },
+        "communities": {
+          "label": "Comunidades",
+          "items": {
+            "guestbook": {
+              "label": "Libro visitas",
+              "description": "Agradecemos sus comentarios en nuestro libro de visitas."
+            },
+            "patreon": {
+              "label": "Patreon",
+              "description": "Acceda a contenido disponible solo para suscriptores."
+            }
+          }
+        },
+        "resume": {
+          "label": "Currículum",
+          "tooltip": {
+            "label": "Descargar currículum"
+          }
+        }
+      }
+    }
+  }
 }
