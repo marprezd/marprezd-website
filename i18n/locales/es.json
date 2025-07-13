@@ -8,6 +8,13 @@
         "generator": "Mario Pérez - Sitio web personal"
       }
     },
+    "global": {
+      "loading": "Cargando...",
+      "error": "Ocurrió un error. Por favor, inténtalo de nuevo más tarde.",
+      "not-found": "Página no encontrada",
+      "back-to-home": "Volver a inicio",
+      "time-used": "Tiempo utilizado: "
+    },
     "menu": {
       "items": {
         "home": {
@@ -64,6 +71,103 @@
           "label": "Currículum",
           "tooltip": {
             "label": "Descargar currículum"
+          }
+        }
+      }
+    },
+    "home": {
+      "hero": {
+        "badge": "Acerca de mí",
+        "title": "Hola, {0}  bienvenido a mi sitio web personal.",
+        "name": "Soy Mario!",
+        "description": "Un sitio web donde presento mis proyectos y enseño a otros a desarrollar software con Python, Next.js y otras tecnologías.",
+        "started": "Empezar"
+      },
+      "profile": {
+        "description": "Soy un desarrollador de software autodidacta especializado en ciencia de datos. Me apasiona aprender y compartir conocimientos. Disfruto creando aplicaciones web y explorando nuevas tecnologías.",
+        "experience": "{years} años de experiencia"
+      },
+      "skills": {
+        "title": "Habilidades blandas y duras",
+        "description": "Habilidades que resaltan mis capacidades profesionales.",
+        "average": "Promedio:"
+      },
+      "soft-skills": {
+        "communication": "Comunicación",
+        "teamwork": "Trabajo en equipo",
+        "problem-solving": "Resolución de problemas",
+        "adaptability": "Adaptabilidad",
+        "time-management": "Gestión del tiempo",
+        "critical-thinking": "Pensamiento crítico",
+        "self-motivation": "Automotivación",
+        "professional-ethics": "Ética profesional",
+        "empathy": "Empatía",
+        "proactivity": "Proactividad"
+      },
+      "metrics": {
+        "title": "Panel de Estadísticas",
+        "description": "Algunas métricas sobre mis actividades de programación.",
+        "charts": {
+          "refresh": "Refrescar",
+          "error": "No se pudieron cargar los datos. Inténtelo de nuevo más tarde.",
+          "global-code-average": {
+            "hr": "horas",
+            "min": "minutos"
+          },
+          "githubContributions": {
+            "title": "Contribuciones de GitHub",
+            "subtitle": "Contribuciones realizadas durante el último año."
+          },
+          "githubStats": {
+            "title": "Estadísticas de Github",
+            "subtitle": "Solicitudes de extracción, problemas, repositorios...",
+            "stars": "Estrellas recibidas",
+            "commitments": "Comentarios de confirmación",
+            "prs": "Solicitudes de extracción",
+            "issues": "Problemas",
+            "contributions": "Contribuciones",
+            "total-repos": "Repositorios",
+            "total-followers": "Seguidores"
+          },
+          "programming-languages": {
+            "title": "Lenguajes de programación",
+            "subtitle": "Los lenguajes de programación más utilizados.",
+            "hr": "hrs",
+            "min": "mins"
+          },
+          "categories-tracking": {
+            "title": "Depuración y codificación",
+            "subtitle": "Estadísticas de depuración y codificación.",
+            "hr": "hrs",
+            "min": "mins"
+          },
+          "best-days": {
+            "title": "Programación por día",
+            "subtitle": "Los mejores días de programación de la última semana.",
+            "label": "Total"
+          },
+          "best-days-avgs": {
+            "cumulative-total": {
+              "title": "Programación anual",
+              "desc": "Total de horas de programación por año."
+            },
+            "difference-48hrs": {
+              "title": "Diferencia porcentual",
+              "desc": "Diferencias porcentuales en las últimas 48 horas.",
+              "min": "mins"
+            },
+            "daily-average": {
+              "title": "Programación diaria",
+              "desc": "Promedio de horas diarias de programación."
+            },
+            "code-editors": {
+              "title": "Editores de código e IDEs",
+              "desc": "Los editores de código más utilizados por hora."
+            },
+            "operating-systems": {
+              "title": "Sistemas operativos",
+              "desc": "Los sistemas operativos más utilizados por hora."
+            }
           }
         }
       }

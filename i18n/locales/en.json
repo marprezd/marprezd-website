@@ -8,6 +8,13 @@
         "generator": "Mario Pérez - Personal website"
       }
     },
+    "global": {
+      "loading": "Loading...",
+      "error": "An error occurred. Please try again later.",
+      "not-found": "Page not found",
+      "back-to-home": "Back to home",
+      "time-used": "Time used: "
+    },
     "menu": {
       "items": {
         "home": {
@@ -64,6 +71,103 @@
           "label": "Resume",
           "tooltip": {
             "label": "Download resume"
+          }
+        }
+      }
+    },
+    "home": {
+      "hero": {
+        "badge": "About me",
+        "title": "Hi, {0} Welcome to my personal website.",
+        "name": "I am Mario!",
+        "description": "A website where I showcase my projects and teach others how to build software using Python, Next.js, and other technologies.",
+        "started": "Get started"
+      },
+      "profile": {
+        "description": "I am a self-taught software developer with a focus on data science. I have a passion for learning and sharing knowledge with others. I enjoy building web applications and exploring new technologies.",
+        "experience": "{years} years of experience"
+      },
+      "skills": {
+        "title": "Soft and hard skills",
+        "description": "Skills that highlight my professional capabilities.",
+        "average": "Average:"
+      },
+      "soft-skills": {
+        "communication": "Communication",
+        "teamwork": "Teamwork",
+        "problem-solving": "Problem-solving",
+        "adaptability": "Adaptability",
+        "time-management": "Time management",
+        "critical-thinking": "Critical thinking",
+        "self-motivation": "Self-motivation",
+        "professional-ethics": "Professional ethics",
+        "empathy": "Empathy",
+        "proactivity": "Proactivity"
+      },
+      "metrics": {
+        "title": "Statistics Panel",
+        "description": "Some metrics about my programming activities.",
+        "charts": {
+          "refresh": "Refresh",
+          "error": "Failed to load data. Please try again later.",
+          "global-code-average": {
+            "hr": "hrs",
+            "min": "mins"
+          },
+          "githubContributions": {
+            "title": "GitHub Contributions",
+            "subtitle": "Contributions made during the last year."
+          },
+          "githubStats": {
+            "title": "GitHub Stats",
+            "subtitle": "Pull requests, issues, repositories...",
+            "stars": "Stars received",
+            "commitments": "Commit comments",
+            "prs": "Pull requests",
+            "issues": "Issues",
+            "contributions": "Contributions",
+            "total-repos": "Repositories",
+            "total-followers": "Followers"
+          },
+          "programming-languages": {
+            "title": "Programming languages",
+            "subtitle": "Most used programming languages.",
+            "hr": "hrs",
+            "min": "mins"
+          },
+          "categories-tracking": {
+            "title": "Debugging and coding",
+            "subtitle": "Debugging and coding statistics.",
+            "hr": "hrs",
+            "min": "mins"
+          },
+          "best-days": {
+            "title": "Programming by day",
+            "subtitle": "Best programming days of the last week.",
+            "label": "Total"
+          },
+          "best-days-avgs": {
+            "cumulative-total": {
+              "title": "Annual programming",
+              "desc": "Total hours of programming per year."
+            },
+            "difference-48hrs": {
+              "title": "Percentage difference",
+              "desc": "Percentage differences in the last 48 hours.",
+              "min": "mins"
+            },
+            "daily-average": {
+              "title": "Daily programming",
+              "desc": "Average daily hours of programming."
+            },
+            "code-editors": {
+              "title": "Code editors and IDEs",
+              "desc": "Most used code editors per hour."
+            },
+            "operating-systems": {
+              "title": "Operating systems",
+              "desc": "Most used operating systems per hour."
+            }
           }
         }
       }
