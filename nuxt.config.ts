@@ -1,21 +1,21 @@
+/* eslint-disable node/prefer-global/process */
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { host } from './app/utils/config'
 
 export default defineNuxtConfig({
-  modules: [
-    '@nuxt/content',
-    '@nuxthub/core',
-    '@nuxt/eslint',
-    '@nuxt/image',
-    '@nuxt/ui',
-    '@nuxtjs/i18n',
-    'nuxt-security',
-  ],
+  modules: ['@nuxt/content', '@nuxthub/core', '@nuxt/eslint', '@nuxt/image', '@nuxt/ui', '@nuxtjs/i18n', 'nuxt-security', 'nuxt-echarts'],
   devtools: { enabled: true },
   runtimeConfig: {
+    wakapiApiKey: process.env.NUXT_WAKAPI_API_KEY,
+    githubApiToken: process.env.NUXT_GITHUB_API_TOKEN,
+    giscusRepoId: process.env.GISCUS_REPO_ID,
+    giscusCategoryId: process.env.GISCUS_CATEGORY_ID,
     public: {
-      // Can be overridden by NUXT_PUBLIC_HELLO_TEXT environment variable
-      helloText: 'Hello from the Edge',
+      githubEndpoint: process.env.NUXT_PUBLIC_GITHUB_ENDPOINT,
+      wakapiLast12Months: process.env.NUXT_PUBLIC_WAKAPI_ENDPOINT_LAST_12_MONTHS,
+      wakapiLast7days: process.env.NUXT_PUBLIC_WAKAPI_ENDPOINT_SUMMARIES_LAST_7_DAYS,
+      wakapiYesterday: process.env.NUXT_PUBLIC_WAKAPI_ENDPOINT_SUMMARIES_YESTERDAY,
+      wakapiToday: process.env.NUXT_PUBLIC_WAKAPI_ENDPOINT_SUMMARIES_TODAY,
       i18n: {
         baseUrl: host,
       },
@@ -46,10 +46,8 @@ export default defineNuxtConfig({
     // Page transitions are handled by motion-v in app/app.vue
     // If you wish to configure transitions, edit the motion.div in app.vue
     head: {
-      // titleTemplate: '%s - Mario Pérez',
       meta: [
         { name: 'author', content: 'Mario Pérez' },
-        // { name: 'charset', content: 'utf-8' },
         { name: 'theme-color', content: '#14b8a6' },
       ],
     },
@@ -194,5 +192,11 @@ export default defineNuxtConfig({
         'upgrade-insecure-requests': true,
       },
     },
+  },
+  echarts: {
+    renderer: ['svg', 'canvas'],
+    charts: ['BarChart', 'HeatmapChart', 'LineChart', 'PieChart', 'TreemapChart'],
+    components: ['GridComponent', 'DatasetComponent', 'TooltipComponent', 'LegendComponent', 'DataZoomComponent', 'TitleComponent', 'VisualMapComponent', 'ToolboxComponent'],
+    features: ['LabelLayout', 'UniversalTransition'],
   },
 })
