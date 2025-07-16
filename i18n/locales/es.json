@@ -144,7 +144,8 @@
           "best-days": {
             "title": "Programación por día",
             "subtitle": "Los mejores días de programación de la última semana.",
-            "label": "Total"
+            "label": "Total",
+            "jobHours": "Menos de 1 hora | 1 hora | {count} horas"
           },
           "best-days-avgs": {
             "cumulative-total": {

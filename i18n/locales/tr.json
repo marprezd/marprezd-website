@@ -82,92 +82,93 @@
         "name": "Ben Mario!",
         "description": "Bir web sitesi, projelerimi gösteriyorum ve Python, Next.js ve diğer teknolojiler kullanarak yazılım geliştirmeyi öğretiyorum.",
         "started": "Başlayın"
-      }
-    },
-    "profile": {
-      "description": "Veri bilimine odaklanan kendi kendini yetiştirmiş bir yazılım geliştiricisiyim. Öğrenmeye ve başkalarıyla bilgi paylaşmaya tutkum var. Web uygulamaları oluşturmaktan ve yeni teknolojileri keşfetmekten hoşlanıyorum.",
-      "experience": "{years} yıllık deneyim"
-    },
-    "skills": {
-      "title": "Yumuşak ve sert beceriler",
-      "description": "Mesleki yeteneklerimi öne çıkaran beceriler.",
-      "average": "Ortalama:"
-    },
-    "soft-skills": {
-      "communication": "İletişim",
-      "teamwork": "Ekip çalışması",
-      "problem-solving": "Sorun Çözme",
-      "adaptability": "Uyarlanabilirlik",
-      "time-management": "Zaman Yönetimi",
-      "critical-thinking": "Eleştirel Düşünme",
-      "self-motivation": "Öz Motivasyon",
-      "professional-ethics": "Mesleki etik",
-      "empathy": "Empati",
-      "proactivity": "Proaktiflik"
-    },
-    "metrics": {
-      "title": "İstatistik Panosu",
-      "description": "Programlama faaliyetlerime ilişkin bazı metrikler.",
-      "charts": {
-        "refresh": "Yenile",
-        "error": "Veriler başarıyla yüklenemedi. Lütfen daha sonra tekrar deneyin.",
-        "global-code-average": {
-          "hr": "saat",
-          "min": "dakikalar"
-        },
-        "githubContributions": {
-          "title": "GitHub katkıları",
-          "subtitle": "Geçtiğimiz yıl içerisinde yapılan katkılar."
-        },
-        "githubStats": {
-          "title": "Github İstatistikleri",
-          "subtitle": "Çekme istekleri, sorunlar, depolar...",
-          "stars": "Yenilen yıldızlar",
-          "commitments": "Commit yorumlarının",
-          "prs": "Çekme istekleri",
-          "issues": "Sorunlar",
-          "contributions": "Katkılar",
-          "total-repos": "Depolar",
-          "total-followers": "Takipçiler"
-        },
-        "programming-languages": {
-          "title": "Programlama dilleri",
-          "subtitle": "En sık kullanılan programlama dilleri.",
-          "hr": "sa",
-          "min": "dk"
-        },
-        "categories-tracking": {
-          "title": "Hata ayıklama ve kodlama",
-          "subtitle": "Hata ayıklama ve kodlama istatistikleri.",
-          "hr": "sa",
-          "min": "dk"
-        },
-        "best-days": {
-          "title": "Günlük programlama",
-          "subtitle": "Geçtiğimiz haftanın en iyi programlama günleri.",
-          "label": "toplam"
-        },
-        "best-days-avgs": {
-          "cumulative-total": {
-            "title": "Yıllık programlama",
-            "desc": "Yıllık toplam programlama saati."
+      },
+      "profile": {
+        "description": "Veri bilimine odaklanan kendi kendini yetiştirmiş bir yazılım geliştiricisiyim. Öğrenmeye ve başkalarıyla bilgi paylaşmaya tutkum var. Web uygulamaları oluşturmaktan ve yeni teknolojileri keşfetmekten hoşlanıyorum.",
+        "experience": "{years} yıllık deneyim"
+      },
+      "skills": {
+        "title": "Yumuşak ve sert beceriler",
+        "description": "Mesleki yeteneklerimi öne çıkaran beceriler.",
+        "average": "Ortalama:"
+      },
+      "soft-skills": {
+        "communication": "İletişim",
+        "teamwork": "Ekip çalışması",
+        "problem-solving": "Sorun Çözme",
+        "adaptability": "Uyarlanabilirlik",
+        "time-management": "Zaman Yönetimi",
+        "critical-thinking": "Eleştirel Düşünme",
+        "self-motivation": "Öz Motivasyon",
+        "professional-ethics": "Mesleki etik",
+        "empathy": "Empati",
+        "proactivity": "Proaktiflik"
+      },
+      "metrics": {
+        "title": "İstatistik Panosu",
+        "description": "Programlama faaliyetlerime ilişkin bazı metrikler.",
+        "charts": {
+          "refresh": "Yenile",
+          "error": "Veriler başarıyla yüklenemedi. Lütfen daha sonra tekrar deneyin.",
+          "global-code-average": {
+            "hr": "saat",
+            "min": "dakikalar"
           },
-          "difference-48hrs": {
-            "title": "Programlama ve yüzdelik fark",
-            "desc": "Son 48 saatteki yüzdelik farklar.",
-            "min": "mins"
+          "githubContributions": {
+            "title": "GitHub katkıları",
+            "subtitle": "Geçtiğimiz yıl içerisinde yapılan katkılar."
           },
-          "daily-average": {
+          "githubStats": {
+            "title": "Github İstatistikleri",
+            "subtitle": "Çekme istekleri, sorunlar, depolar...",
+            "stars": "Yenilen yıldızlar",
+            "commitments": "Commit yorumlarının",
+            "prs": "Çekme istekleri",
+            "issues": "Sorunlar",
+            "contributions": "Katkılar",
+            "total-repos": "Depolar",
+            "total-followers": "Takipçiler"
+          },
+          "programming-languages": {
+            "title": "Programlama dilleri",
+            "subtitle": "En sık kullanılan programlama dilleri.",
+            "hr": "sa",
+            "min": "dk"
+          },
+          "categories-tracking": {
+            "title": "Hata ayıklama ve kodlama",
+            "subtitle": "Hata ayıklama ve kodlama istatistikleri.",
+            "hr": "sa",
+            "min": "dk"
+          },
+          "best-days": {
             "title": "Günlük programlama",
-            "desc": "Ortalama günlük programlama saati."
+            "subtitle": "Geçtiğimiz haftanın en iyi programlama günleri.",
+            "label": "Toplam",
+            "jobHours": "1 saatten az | 1 saat | {count} saat"
           },
-          "code-editors": {
-            "title": "Kod düzenleyiciler ve IDE'ler",
-            "desc": "Saat başına en çok kullanılan kod editörleri."
-          },
-          "operating-systems": {
-            "title": "İşletim sistemleri",
-            "desc": "Saat başına en çok kullanılan işletim sistemleri."
+          "best-days-avgs": {
+            "cumulative-total": {
+              "title": "Yıllık programlama",
+              "desc": "Yıllık toplam programlama saati."
+            },
+            "difference-48hrs": {
+              "title": "Programlama ve yüzdelik fark",
+              "desc": "Son 48 saatteki yüzdelik farklar.",
+              "min": "mins"
+            },
+            "daily-average": {
+              "title": "Günlük programlama",
+              "desc": "Ortalama günlük programlama saati."
+            },
+            "code-editors": {
+              "title": "Kod düzenleyiciler ve IDE'ler",
+              "desc": "Saat başına en çok kullanılan kod editörleri."
+            },
+            "operating-systems": {
+              "title": "İşletim sistemleri",
+              "desc": "Saat başına en çok kullanılan işletim sistemleri."
+            }
           }
         }
       }
