@@ -47,6 +47,9 @@ importers:
       better-sqlite3:
         specifier: ^12.2.0
         version: 12.2.0
+      echarts:
+        specifier: ^5.6.0
+        version: 5.6.0
       github-slugger:
         specifier: ^2.0.0
         version: 2.0.0
@@ -59,6 +62,9 @@ importers:
       nuxt:
         specifier: ^3.17.6
         version: 3.17.6(@parcel/watcher@2.5.1)(@types/node@24.0.10)(@vue/compiler-sfc@3.5.17)(better-sqlite3@12.2.0)(db0@0.3.2(better-sqlite3@12.2.0))(eslint@9.30.1(jiti@2.4.2))(ioredis@5.6.1)(lightningcss@1.30.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.44.2)(terser@5.43.1)(typescript@5.8.3)(vite@6.3.5(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(vue-tsc@2.2.12(typescript@5.8.3))(yaml@2.8.0)
+      nuxt-echarts:
+        specifier: 0.3.3
+        version: 0.3.3(echarts@5.6.0)(magicast@0.3.5)
       nuxt-security:
         specifier: 2.2.0
         version: 2.2.0(magicast@0.3.5)(rollup@4.44.2)
@@ -3325,6 +3331,9 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
+  echarts@5.6.0:
+    resolution: {integrity: sha512-oTbVTsXfKuEhxftHqL5xprgLoc0k7uScAwtryCgWF6hPYFLRwOUHiFmHGCBKP5NPFNkDVopOieyUqYGH8Fa3kA==}
+
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
@@ -4995,6 +5004,11 @@ packages:
   nuxt-csurf@1.6.5:
     resolution: {integrity: sha512-/DMNTON8LIVhntamKbBmAuM879B0QnuSJa7ZAkmkZe+21m+1QGcjVUxtSkizaM48NUvkuAGYOG0ncn+kqEgrzw==}
 
+  nuxt-echarts@0.3.3:
+    resolution: {integrity: sha512-SHvCaKPVGR5hESriLArhatHmCWg0C/42ednNn3/JBwFRhCyP5ZALn4oI9dWVV/SoyWyTMUn01RdA6ZlR7jh2ig==}
+    peerDependencies:
+      echarts: ^5.5.1
+
   nuxt-security@2.2.0:
     resolution: {integrity: sha512-bTdgAAAdnvM1R1wAX3zQBbYJh6YNFyvsKJwbT9oVv+0U9J/9+k+mufQlJMFO8AdTefi/EDFHG75in9RTnCpngQ==}
     engines: {node: '>=18.0.0'}
@@ -6069,6 +6083,9 @@ packages:
     peerDependencies:
       typescript: '>=4.0.0'
 
+  tslib@2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
+
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
@@ -6704,6 +6721,9 @@ packages:
 
   zod@3.25.75:
     resolution: {integrity: sha512-OhpzAmVzabPOL6C3A3gpAifqr9MqihV/Msx3gor2b2kviCgcb+HM9SEOpMWwwNp9MRunWnhtAKUoo0AHhjyPPg==}
+
+  zrender@5.6.1:
+    resolution: {integrity: sha512-OFXkDJKcrlx5su2XbzJvj/34Q3m6PvyCZkVPHGYpcCJ52ek4U/ymZyfuV1nKE23AyBJ51E/6Yr0mhZ7xGTO4ag==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -10221,6 +10241,11 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
+  echarts@5.6.0:
+    dependencies:
+      tslib: 2.3.0
+      zrender: 5.6.1
+
   ee-first@1.1.1: {}
 
   electron-to-chromium@1.5.180: {}
@@ -12393,6 +12418,13 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
+  nuxt-echarts@0.3.3(echarts@5.6.0)(magicast@0.3.5):
+    dependencies:
+      '@nuxt/kit': 3.17.6(magicast@0.3.5)
+      echarts: 5.6.0
+    transitivePeerDependencies:
+      - magicast
+
   nuxt-security@2.2.0(magicast@0.3.5)(rollup@4.44.2):
     dependencies:
       '@nuxt/kit': 3.17.6(magicast@0.3.5)
@@ -13795,6 +13827,8 @@ snapshots:
       picomatch: 4.0.2
       typescript: 5.8.3
 
+  tslib@2.3.0: {}
+
   tslib@2.8.1: {}
 
   tunnel-agent@0.6.0:
@@ -14498,5 +14532,9 @@ snapshots:
   zod@3.22.3: {}
 
   zod@3.25.75: {}
+
+  zrender@5.6.1:
+    dependencies:
+      tslib: 2.3.0
 
   zwitch@2.0.4: {}
