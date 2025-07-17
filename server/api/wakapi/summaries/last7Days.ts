@@ -1,6 +1,5 @@
 import { Buffer } from 'node:buffer'
 import { defineEventHandler, useRuntimeConfig } from '#imports'
-import fetch from 'node-fetch'
 
 // This handler fetches the data for last 7 days from the Wakapi API
 export default defineEventHandler(async (event) => {
