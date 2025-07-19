@@ -116,11 +116,12 @@
           },
           "githubContributions": {
             "title": "Contribuciones de GitHub",
-            "subtitle": "Contribuciones realizadas durante el último año."
+            "description": "Contribuciones realizadas durante el último año.",
+            "contributions": "0 contribuciones | 1 contribución | {count} contribuciones"
           },
           "githubStats": {
             "title": "Estadísticas de Github",
-            "subtitle": "Solicitudes de extracción, problemas, repositorios...",
+            "description": "Solicitudes de extracción, problemas, repositorios...",
             "stars": "Estrellas recibidas",
             "commitments": "Comentarios de confirmación",
             "prs": "Solicitudes de extracción",
@@ -131,44 +132,40 @@
           },
           "programming-languages": {
             "title": "Lenguajes de programación",
-            "subtitle": "Los lenguajes de programación más utilizados.",
+            "description": "Los lenguajes de programación más utilizados.",
             "hr": "hrs",
             "min": "mins"
           },
           "categories-tracking": {
             "title": "Depuración y codificación",
-            "subtitle": "Estadísticas de depuración y codificación.",
+            "description": "Estadísticas de depuración y codificación.",
             "hr": "hrs",
             "min": "mins"
           },
           "best-days": {
             "title": "Programación por día",
-            "subtitle": "Los mejores días de programación de la última semana.",
+            "description": "Los mejores días de programación de la última semana.",
             "label": "Total",
             "jobHours": "Menos de 1 hora | 1 hora | {count} horas"
           },
           "best-days-avgs": {
             "cumulative-total": {
               "title": "Programación anual",
-              "desc": "Total de horas de programación por año."
+              "description": "Total de horas de programación por año."
             },
             "difference-48hrs": {
               "title": "Diferencia porcentual",
-              "desc": "Diferencias porcentuales en las últimas 48 horas.",
+              "description": "Diferencias porcentuales en las últimas 48 horas.",
               "min": "mins"
             },
             "daily-average": {
               "title": "Programación diaria",
-              "desc": "Promedio de horas diarias de programación."
-            },
-            "code-editors": {
-              "title": "Editores de código e IDEs",
-              "desc": "Los editores de código más utilizados por hora."
-            },
-            "operating-systems": {
-              "title": "Sistemas operativos",
-              "desc": "Los sistemas operativos más utilizados por hora."
+              "description": "Promedio de horas diarias de programación."
             }
+          },
+          "code-editors": {
+            "title": "Editores de código e IDEs",
+            "description": "Los editores de código más utilizados por hora."
           }
         }
       }

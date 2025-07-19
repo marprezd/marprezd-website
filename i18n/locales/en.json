@@ -116,11 +116,12 @@
           },
           "githubContributions": {
             "title": "GitHub Contributions",
-            "subtitle": "Contributions made during the last year."
+            "description": "Contributions made during the last year.",
+            "contributions": "0 contributions | 1 contribution | {count} contributions"
           },
           "githubStats": {
             "title": "GitHub Stats",
-            "subtitle": "Pull requests, issues, repositories...",
+            "description": "Pull requests, issues, repositories...",
             "stars": "Stars received",
             "commitments": "Commit comments",
             "prs": "Pull requests",
@@ -131,44 +132,40 @@
           },
           "programming-languages": {
             "title": "Programming languages",
-            "subtitle": "Most used programming languages.",
+            "description": "Most used programming languages.",
             "hr": "hrs",
             "min": "mins"
           },
           "categories-tracking": {
             "title": "Debugging and coding",
-            "subtitle": "Debugging and coding statistics.",
+            "description": "Debugging and coding statistics.",
             "hr": "hrs",
             "min": "mins"
           },
           "best-days": {
             "title": "Programming by day",
-            "subtitle": "Best programming days of the last week.",
+            "description": "Best programming days of the last week.",
             "label": "Total",
             "jobHours": "Less than 1 hour | 1 hour | {count} hours"
           },
           "best-days-avgs": {
             "cumulative-total": {
               "title": "Annual programming",
-              "desc": "Total hours of programming per year."
+              "description": "Total hours of programming per year."
             },
             "difference-48hrs": {
               "title": "Percentage difference",
-              "desc": "Percentage differences in the last 48 hours.",
+              "description": "Percentage differences in the last 48 hours.",
               "min": "mins"
             },
             "daily-average": {
               "title": "Daily programming",
-              "desc": "Average daily hours of programming."
-            },
-            "code-editors": {
-              "title": "Code editors and IDEs",
-              "desc": "Most used code editors per hour."
-            },
-            "operating-systems": {
-              "title": "Operating systems",
-              "desc": "Most used operating systems per hour."
+              "description": "Average daily hours of programming."
             }
+          },
+          "code-editors": {
+            "title": "Code editors and IDEs",
+            "description": "Most used code editors per hour."
           }
         }
       }

@@ -116,11 +116,12 @@
           },
           "githubContributions": {
             "title": "GitHub katkıları",
-            "subtitle": "Geçtiğimiz yıl içerisinde yapılan katkılar."
+            "description": "Geçtiğimiz yıl içerisinde yapılan katkılar.",
+            "contributions": "0 katkı | 1 katkı | {count} katkı"
           },
           "githubStats": {
             "title": "Github İstatistikleri",
-            "subtitle": "Çekme istekleri, sorunlar, depolar...",
+            "description": "Çekme istekleri, sorunlar, depolar...",
             "stars": "Yenilen yıldızlar",
             "commitments": "Commit yorumlarının",
             "prs": "Çekme istekleri",
@@ -131,44 +132,40 @@
           },
           "programming-languages": {
             "title": "Programlama dilleri",
-            "subtitle": "En sık kullanılan programlama dilleri.",
+            "description": "En sık kullanılan programlama dilleri.",
             "hr": "sa",
             "min": "dk"
           },
           "categories-tracking": {
             "title": "Hata ayıklama ve kodlama",
-            "subtitle": "Hata ayıklama ve kodlama istatistikleri.",
+            "description": "Hata ayıklama ve kodlama istatistikleri.",
             "hr": "sa",
             "min": "dk"
           },
           "best-days": {
             "title": "Günlük programlama",
-            "subtitle": "Geçtiğimiz haftanın en iyi programlama günleri.",
+            "description": "Geçtiğimiz haftanın en iyi programlama günleri.",
             "label": "Toplam",
             "jobHours": "1 saatten az | 1 saat | {count} saat"
           },
           "best-days-avgs": {
             "cumulative-total": {
               "title": "Yıllık programlama",
-              "desc": "Yıllık toplam programlama saati."
+              "description": "Yıllık toplam programlama saati."
             },
             "difference-48hrs": {
               "title": "Programlama ve yüzdelik fark",
-              "desc": "Son 48 saatteki yüzdelik farklar.",
+              "description": "Son 48 saatteki yüzdelik farklar.",
               "min": "mins"
             },
             "daily-average": {
               "title": "Günlük programlama",
-              "desc": "Ortalama günlük programlama saati."
-            },
-            "code-editors": {
-              "title": "Kod düzenleyiciler ve IDE'ler",
-              "desc": "Saat başına en çok kullanılan kod editörleri."
-            },
-            "operating-systems": {
-              "title": "İşletim sistemleri",
-              "desc": "Saat başına en çok kullanılan işletim sistemleri."
+              "description": "Ortalama günlük programlama saati."
             }
+          },
+          "code-editors": {
+            "title": "Kod düzenleyiciler ve IDE'ler",
+            "description": "Saat başına en çok kullanılan kod editörleri."
           }
         }
       }
