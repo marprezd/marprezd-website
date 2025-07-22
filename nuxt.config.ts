@@ -3,7 +3,7 @@
 import { host } from './app/utils/config'
 
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxthub/core', '@nuxt/eslint', '@nuxt/image', '@nuxt/ui', '@nuxtjs/i18n', 'nuxt-security', 'nuxt-echarts'],
+  modules: ['@nuxt/content', '@nuxthub/core', '@nuxt/eslint', '@nuxt/image', '@nuxt/ui', '@nuxtjs/i18n', 'nuxt-security'],
   devtools: { enabled: true },
   runtimeConfig: {
     wakapiApiKey: process.env.NUXT_WAKAPI_API_KEY,
@@ -192,11 +192,5 @@ export default defineNuxtConfig({
         'upgrade-insecure-requests': true,
       },
     },
-  },
-  echarts: {
-    renderer: ['svg', 'canvas'],
-    charts: ['BarChart', 'HeatmapChart', 'LineChart', 'PieChart', 'TreemapChart'],
-    components: ['GridComponent', 'DatasetComponent', 'TooltipComponent', 'LegendComponent', 'DataZoomComponent', 'TitleComponent', 'VisualMapComponent', 'ToolboxComponent'],
-    features: ['LabelLayout', 'UniversalTransition'],
   },
 })
