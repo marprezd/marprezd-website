@@ -13,7 +13,8 @@
       "error": "Ocurrió un error. Por favor, inténtalo de nuevo más tarde.",
       "not-found": "Página no encontrada",
       "back-to-home": "Volver a inicio",
-      "time-used": "Tiempo utilizado: "
+      "time-used": "Tiempo utilizado: ",
+      "total": "Total: "
     },
     "menu": {
       "items": {
@@ -122,9 +123,9 @@
           "githubStats": {
             "title": "Estadísticas de Github",
             "description": "Solicitudes de extracción, problemas, repositorios...",
-            "stars": "Estrellas recibidas",
-            "commitments": "Comentarios de confirmación",
-            "prs": "Solicitudes de extracción",
+            "stars": "Estrellas",
+            "commitments": "Confirmaciones",
+            "prs": "Solicitudes extracción",
             "issues": "Problemas",
             "contributions": "Contribuciones",
             "total-repos": "Repositorios",

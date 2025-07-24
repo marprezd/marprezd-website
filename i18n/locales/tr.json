@@ -13,7 +13,8 @@
       "error": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
       "not-found": "Sayfa bulunamadı",
       "back-to-home": "Ana sayfaya geri dön",
-      "time-used": "Kullanılan zaman: "
+      "time-used": "Kullanılan zaman: ",
+      "total": "Toplam: "
     },
     "menu": {
       "items": {
@@ -123,7 +124,7 @@
             "title": "Github İstatistikleri",
             "description": "Çekme istekleri, sorunlar, depolar...",
             "stars": "Yenilen yıldızlar",
-            "commitments": "Commit yorumlarının",
+            "commitments": "Taahhütler",
             "prs": "Çekme istekleri",
             "issues": "Sorunlar",
             "contributions": "Katkılar",

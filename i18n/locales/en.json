@@ -13,7 +13,8 @@
       "error": "An error occurred. Please try again later.",
       "not-found": "Page not found",
       "back-to-home": "Back to home",
-      "time-used": "Time used: "
+      "time-used": "Time used: ",
+      "total": "Total: "
     },
     "menu": {
       "items": {
@@ -122,8 +123,8 @@
           "githubStats": {
             "title": "GitHub Stats",
             "description": "Pull requests, issues, repositories...",
-            "stars": "Stars received",
-            "commitments": "Commit comments",
+            "stars": "Stars",
+            "commitments": "Commitments",
             "prs": "Pull requests",
             "issues": "Issues",
             "contributions": "Contributions",
