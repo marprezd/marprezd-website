@@ -169,7 +169,15 @@
             "description": "Los editores de código más utilizados por hora."
           }
         }
-      }
+      },
+      "pinned-posts": "Publicaciones fijadas"
+    },
+    "blog": {
+      "reading-time": {
+        "label": "Tiempo estimado de lectura",
+        "mins": "mins lectura"
+      },
+      "words": "palabras"
     }
   }
 }

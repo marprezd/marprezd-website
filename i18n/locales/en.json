@@ -169,7 +169,15 @@
             "description": "Most used code editors per hour."
           }
         }
-      }
+      },
+      "pinned-posts": "Pinned Posts"
+    },
+    "blog": {
+      "reading-time": {
+        "label": "Estimated reading time",
+        "mins": "mins read"
+      },
+      "words": "words"
     }
   }
 }

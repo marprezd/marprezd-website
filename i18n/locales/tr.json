@@ -169,7 +169,15 @@
             "description": "Saat başına en çok kullanılan kod editörleri."
           }
         }
-      }
+      },
+      "pinned-posts": "Sabitlenmiş Gönderiler"
+    },
+    "blog": {
+      "reading-time": {
+        "label": "Tahmini okuma süresi",
+        "mins": "dk okuma"
+      },
+      "words": "kelimeler"
     }
   }
 }
