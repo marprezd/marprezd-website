@@ -21,6 +21,7 @@ export default defineContentConfig({
       source: 'blog/*.md',
       // Define custom schema for blog collection
       schema: z.object({
+        pinned: z.boolean().default(false),
         date: z.date().optional(),
         lastModified: z.date(),
         excerpt: z.object({
