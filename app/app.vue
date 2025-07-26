@@ -85,6 +85,6 @@ body.dark::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar {
-  width: 0.2rem;
+  width: 0.38rem;
 }
 </style>
