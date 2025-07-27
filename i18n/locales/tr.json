@@ -170,14 +170,101 @@
           }
         }
       },
-      "pinned-posts": "Sabitlenmiş Gönderiler"
+      "pinned-posts": "Sabitlenmiş Gönderiler",
+      "no-pinned-posts": "Sabitlenmiş Gönderi bulunamadı"
     },
     "blog": {
       "reading-time": {
         "label": "Tahmini okuma süresi",
         "mins": "dk okuma"
       },
-      "words": "kelimeler"
+      "words": "kelimeler",
+      "callouts": {
+        "info": "Bilgi",
+        "warning": "Uyarı",
+        "success": "Başarı",
+        "danger": "Tehlike"
+      },
+      "hero": {
+        "title": "En son gönderilere göz atalım",
+        "description": "Dikkatle seçilmiş makale listemizi inceleyerek yazılım geliştirme becerilerinizi geliştirin."
+      },
+      "pagination": {
+        "select": {
+          "label": "Sayfa başına öğe",
+          "placeholder": "Sayfa boyutunu seçin"
+        },
+        "previous-page": "Önceki sayfaya git",
+        "previous": "Önceki",
+        "next-page": "Sonraki sayfaya git",
+        "next": "Sonraki",
+        "more-pages": "Daha fazla sayfa"
+      },
+      "tags": {
+        "hero": {
+          "title": "{0} etiketli gönderiler",
+          "tag": "{tag}",
+          "description": "{tag} etiketiyle ilgili gönderilerimizi keşfedin. Şu anda toplam ({total}) gönderi var."
+        },
+        "label": "En popüler etiketler"
+      },
+      "categories": {
+        "hero": {
+          "title": "{0} kategorisindeki gönderiler",
+          "category": "{category}",
+          "description": "{category} kategorisindeki gönderilerimizi keşfedin. Şu anda toplam ({total}) gönderi var."
+        },
+        "label": "En popüler kategoriler"
+      },
+      "block-code": {
+        "copy": "Kodu Kopyala",
+        "copied": "Kopyalandı!",
+        "toast-msg": "Kod başarıyla kopyalandı!"
+      },
+      "available_in": "Diğer dillerde oku",
+      "next": "En son gönderi",
+      "prev": "Daha eski gönderi",
+      "index": "Dizine geri dön",
+      "allPosts": "Tüm gönderiler",
+      "image": {
+        "credit": "Fotoğraf: {photographer}, {host}"
+      },
+      "toc": {
+        "label": "Bu sayfada"
+      },
+      "tabs": {
+        "list": {
+          "author": "Yazar",
+          "share": "Paylaş",
+          "comments": "Yorumlar",
+          "related": "İlgili gönderiler"
+        },
+        "content": {
+          "author": {
+            "first-line": "Yazan",
+            "second-line": "Mario Pérez.",
+            "summary": "Mario Perez, Kolombiya merkezli bir Yazılım Geliştiricisidir. Python, Next.js ve diğer web teknolojileriyle modern web uygulamaları oluşturma hakkında sık sık yazıyor."
+          },
+          "share": {
+            "first-line": "Paylaşın",
+            "second-line": "Sosyal olun.",
+            "summary": "Başkalarına yardım etmek için bu gönderiyi sosyal medyanızda yayın"
+          },
+          "comments": {
+            "first-line": "Geri bildirim",
+            "second-line": "Gönderi geri bildiriminizi ekleyin.",
+            "load-comments": "Yorumları yükle"
+          },
+          "related-posts": {
+            "first-line": "İlgili gönderiler",
+            "second-line": "Okumayı unutmayın"
+          }
+        }
+      },
+      "added": "Eklendi",
+      "updated": "Son güncelleme",
+      "view": "kez okundu",
+      "views": "kez okundu"
     }
   }
 }

@@ -170,14 +170,73 @@
           }
         }
       },
-      "pinned-posts": "Publicaciones fijadas"
+      "pinned-posts": "Publicaciones fijadas",
+      "no-pinned-posts": "No hay publicaciones fijadas"
     },
     "blog": {
       "reading-time": {
         "label": "Tiempo estimado de lectura",
         "mins": "mins lectura"
       },
-      "words": "palabras"
+      "words": "palabras",
+      "callouts": {
+        "info": "Info",
+        "warning": "Advertencia",
+        "success": "Éxito",
+        "danger": "Peligro"
+      },
+      "hero": {
+        "title": "Veamos los últimos artículos",
+        "description": "Mejore sus habilidades de desarrollo de software explorando nuestra lista de artículos cuidadosamente seleccionados."
+      },
+      "pagination": {
+        "select": {
+          "label": "Elementos por página",
+          "placeholder": "Seleccionar tamaño de página"
+        },
+        "previous-page": "Ir a la página anterior",
+        "previous": "Anterior",
+        "next-page": "Ir a la página siguiente",
+        "next": "Siguiente",
+        "more-pages": "Más páginas"
+      },
+      "toc": {
+        "label": "En esta página"
+      },
+      "tabs": {
+        "list": {
+          "author": "Autor",
+          "share": "Compartir",
+          "comments": "Comentarios",
+          "related": "Publicaciones relacionadas",
+          "quiz": "Cuestionario"
+        },
+        "content": {
+          "author": {
+            "first-line": "Escrito por",
+            "second-line": "Mario Pérez.",
+            "summary": "Mario Pérez es un Desarrollador de Software basado en Colombia. A menudo escribe sobre la creación de aplicaciones web modernas con Python, Next.js y otras tecnologías web."
+          },
+          "share": {
+            "first-line": "Comparte esto",
+            "second-line": "Sé Social.",
+            "summary": "Difunde este artículo en tus redes sociales para ayudar a otros."
+          },
+          "comments": {
+            "first-line": "Feedback",
+            "second-line": "Añade tu feedback sobre el artículo.",
+            "load-comments": "Cargar comentarios"
+          },
+          "related-posts": {
+            "first-line": "Publicaciones relacionadas",
+            "second-line": "No olvides leer."
+          }
+        }
+      },
+      "added": "Añadido",
+      "updated": "Ultima actualización",
+      "view": "tiempo de lectura",
+      "views": "veces leido"
     }
   }
 }

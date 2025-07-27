@@ -170,14 +170,102 @@
           }
         }
       },
-      "pinned-posts": "Pinned Posts"
+      "pinned-posts": "Pinned Posts",
+      "no-pinned-posts": "No pinned posts"
     },
     "blog": {
       "reading-time": {
         "label": "Estimated reading time",
         "mins": "mins read"
       },
-      "words": "words"
+      "words": "words",
+      "callouts": {
+        "info": "Info",
+        "warning": "Warning",
+        "success": "Success",
+        "danger": "Danger"
+      },
+      "hero": {
+        "title": "Let’s check out the latest posts",
+        "description": "Improve your software development skills by exploring our carefully selected list of articles."
+      },
+      "pagination": {
+        "select": {
+          "label": "Items per page",
+          "placeholder": "Select page size"
+        },
+        "previous-page": "Go to previous page",
+        "previous": "Previous",
+        "next-page": "Go to next page",
+        "next": "Next",
+        "more-pages": "More pages"
+      },
+      "tags": {
+        "hero": {
+          "title": "Posts tagged with {0}",
+          "tag": "{tag}",
+          "description": "Check out our collection of blog articles under the {tag} tag. There are currently ({total}) posts in total."
+        },
+        "label": "Top tags"
+      },
+      "categories": {
+        "hero": {
+          "title": "Posts in the {0} category",
+          "category": "{category}",
+          "description": "Check out our collection of blog articles under the {category} category. There are currently ({total}) posts in total."
+        },
+        "label": "Top categories"
+      },
+      "block-code": {
+        "copy": "Copy Code",
+        "copied": "Copied!",
+        "toast-msg": "The code has been copied successfully!"
+      },
+      "available_in": "Read in other languages",
+      "next": "Most recent post",
+      "prev": "Oldest post",
+      "index": "Back to the index",
+      "allPosts": "All posts",
+      "image": {
+        "credit": "Photo by {photographer} on {host}"
+      },
+      "toc": {
+        "label": "On this page"
+      },
+      "tabs": {
+        "list": {
+          "author": "Author",
+          "share": "Share",
+          "comments": "Comments",
+          "related": "Related posts",
+          "quiz": "Quiz"
+        },
+        "content": {
+          "author": {
+            "first-line": "Written by",
+            "second-line": "Mario Pérez.",
+            "summary": "Mario Pérez is a Software Developer based in Colombia. He often writes about creating modern web apps with Python, Next.js, and other web tech."
+          },
+          "share": {
+            "first-line": "Share it",
+            "second-line": "Be Social.",
+            "summary": "Spread this post on your social media to help others."
+          },
+          "comments": {
+            "first-line": "Feedback",
+            "second-line": "Add your post feedback.",
+            "load-comments": "Load comments"
+          },
+          "related-posts": {
+            "first-line": "Related posts",
+            "second-line": "Don't forget to read."
+          }
+        }
+      },
+      "added": "Added",
+      "updated": "Last updated",
+      "view": "time read",
+      "views": "times read"
     }
   }
 }
