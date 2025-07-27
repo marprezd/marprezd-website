@@ -1,92 +1,88 @@
 <script setup lang="ts">
-import { NuxtLinkLocale, UBadge } from '#components'
+import type { BlogPost } from '~/types/blog'
 import ReadTime from '~/components/blog/ReadTime.vue'
 
-const { post } = defineProps<{ post: any }>()
-
-const readTimeClass = computed(() => {
-  return 'rounded-xl'
-})
+defineProps<{
+  post: Pick<BlogPost, 'title' | 'date' | 'lastModified' | 'path' | 'description' | 'cover' | 'categories' | 'language' | 'body'>
+}>()
 </script>
 
 <template>
-  <div>
+  <article class="h-full flex flex-col group">
     <NuxtLinkLocale
       :to="post.path"
-      class="group block"
+      class="h-full flex flex-col"
     >
-      <div class="bg-white dark:bg-neutral-950 relative group-hover:shadow-lg group-hover:shadow-neutral-300 dark:group-hover:shadow-neutral-700 transition-shadow duration-300 ease-out transform rounded-lg p-4 border border-muted shadow-sm space-y-2">
-        <!-- image processing for multiple device -->
+      <div class="relative aspect-video overflow-hidden rounded-xl mb-4">
         <NuxtImg
-          :src="post.cover"
-          class="rounded-lg w-full object-cover"
-          provider="cloudinary"
-          width="331"
-          height="221"
+          :src="post.cover?.image || '/images/placeholder.jpg'"
           :alt="post.title"
-          quality="80"
-          format="webp"
-          placeholder
+          class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          provider="cloudinary"
+          width="600"
+          height="400"
           loading="lazy"
         />
-        <!-- label categories -->
-        <div class="top-6 left-6 absolute z-0">
-          <div class="flex items-center gap-2">
+      </div>
+
+      <div class="flex-1 flex flex-col">
+        <div class="flex items-center gap-2 mb-2">
+          <UBadge
+            v-if="post.date"
+            variant="soft"
+            color="neutral"
+            class="text-muted"
+            icon="i-tabler-calendar"
+          >
+            <time>
+              <i18n-d
+                tag="span"
+                :value="new Date(post.date)"
+                scope="global"
+                :format="{ year: 'numeric', month: 'short', day: 'numeric' }"
+              />
+            </time>
+          </UBadge>
+          <UBadge
+            v-if="post.lastModified"
+            variant="soft"
+            color="success"
+            class="text-muted"
+            icon="i-tabler-edit"
+          >
+            <time>
+              <i18n-d
+                tag="span"
+                :value="new Date(post.lastModified)"
+                scope="global"
+                :format="{ year: 'numeric', month: 'short', day: 'numeric' }"
+              />
+            </time>
+          </UBadge>
+        </div>
+
+        <h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+          {{ post.title }}
+        </h3>
+
+        <p class="text-muted mb-4 line-clamp-2">
+          {{ post.description }}
+        </p>
+
+        <div class="mt-auto flex items-center justify-between">
+          <div class="flex flex-wrap gap-2">
             <UBadge
-              v-for="tag in post.tags"
-              :key="tag"
-              variant="soft"
-              color="secondary"
+              v-for="category in post.categories"
+              :key="category"
+              variant="subtle"
+              class="text-xs"
             >
-              {{ tag }}
+              {{ category }}
             </UBadge>
           </div>
-        </div>
-        <div>
-          <!-- Title post -->
-          <h3 class="text-2xl font-bold tracking-tight line-clamp-2">
-            {{ post.title }}
-          </h3>
-          <!-- Post meta -->
-          <div class="flex items-center my-2 gap-2">
-            <div class="flex items-center gap-2">
-              <UBadge
-                variant="soft"
-                color="neutral"
-                class="rounded-xl"
-                icon="i-tabler-user"
-              >
-                Mario Pérez
-              </UBadge>
-              <UBadge
-                variant="soft"
-                color="neutral"
-                class="rounded-xl"
-                icon="i-tabler-calendar"
-              >
-                <i18n-d
-                  tag="span"
-                  :value="new Date(post.date)"
-                  scope="global"
-                  :format="{ year: 'numeric', month: 'short', day: 'numeric' }"
-                />
-              </UBadge>
-            </div>
-            <ReadTime
-              :content="post.body"
-              :language="post.language"
-              :show-word-count="false"
-              :reading-time-class="readTimeClass"
-            />
-          </div>
-          <!-- Post content -->
-          <p class="line-clamp-3">
-            {{ post.description }}
-          </p>
+          <ReadTime :content="post.body" :language="post.language" class="text-sm text-muted" />
         </div>
       </div>
     </NuxtLinkLocale>
-  </div>
+  </article>
 </template>
-
-<style scoped></style>

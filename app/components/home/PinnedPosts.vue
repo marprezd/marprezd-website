@@ -1,27 +1,47 @@
 <script setup lang="ts">
+import type { BlogPost } from '~/types/blog'
 import { motion } from 'motion-v'
 
-const { locale, t } = useI18n()
+const { locale } = useI18n()
 
-// Fetch all blog posts
-const { data: pinnedPosts } = await useAsyncData(
-  `pinned-posts-${locale.value}`,
-  () => queryCollection('blog')
-    .order('date', 'DESC')
-    .select('title', 'date', 'path', 'pinned', 'description', 'language', 'cover', 'tags', 'body')
-    .all(),
-)
+// Composable for fetching and processing posts
+function usePinnedPosts() {
+  const { data: posts, pending, error } = useAsyncData<BlogPost[]>(
+    `pinned-posts-${locale.value}`,
+    async () => {
+      const items = await queryCollection('blog')
+        .where('pinned', '=', true)
+        .order('date', 'DESC')
+        .select('id', 'title', 'date', 'lastModified', 'path', 'description', 'language', 'cover', 'categories', 'body')
+        .all()
 
-// Filter and map posts by locale and pinned property
-const filteredPosts = computed(() =>
-  (pinnedPosts.value || [])
-    .filter(post => post.language === locale.value && post.pinned === true)
-    .map(post => ({
-      ...post,
-      // Convert body to string if it's not already
-      body: typeof post.body === 'string' ? post.body : JSON.stringify(post.body),
-    })),
-)
+      return items.map(item => ({
+        ...item,
+        cover: typeof item.cover === 'string' ? { image: item.cover } : item.cover || { image: '' },
+        categories: item.categories || [],
+        date: item.date ? new Date(item.date).toISOString() : '',
+        lastModified: item.lastModified ? new Date(item.lastModified).toISOString() : undefined,
+        body: typeof item.body === 'string' ? item.body : JSON.stringify(item.body),
+      }))
+    },
+  )
+
+  return {
+    filteredPosts: computed(() => posts.value || []),
+    isLoading: pending,
+    error,
+  }
+}
+
+const { filteredPosts, isLoading, error } = usePinnedPosts()
+
+// Animation configuration
+const motionSectionTransition = {
+  initial: { opacity: 0, y: 20 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, margin: '0px 0px -100px 0px' },
+  transition: { duration: 0.6, ease: 'easeOut' },
+}
 </script>
 
 <template>
@@ -35,25 +55,41 @@ const filteredPosts = computed(() =>
     >
       <div class="w-full space-y-6 lg:space-y-10">
         <h2 class="font-bold text-3xl lg:text-4xl lg:text-left">
-          {{ t('app.home.pinned-posts') }}
+          {{ $t('app.home.pinned-posts') }}
         </h2>
-        <div v-if="filteredPosts">
-          <div class="grid grid-cols-12 gap-4 bg-default rounded-2xl p-4">
-            <!-- if posts.length > 0 iterate over posts and slice the first post -->
-            <div v-if="filteredPosts.length > 0" class="col-span-full md:col-start-1 md:col-end-7">
-              <HomeSinglePost :post="filteredPosts[0]" />
+
+        <template v-if="isLoading">
+          <div class="animate-pulse bg-default/50 rounded-2xl p-6 h-64" />
+        </template>
+
+        <template v-else-if="error">
+          <div class="text-center text-error p-4">
+            {{ $t('app.global.error') }}
+          </div>
+        </template>
+
+        <template v-else-if="filteredPosts.length === 0">
+          <p class="text-center text-muted">
+            {{ $t('app.home.no_pinned_posts') }}
+          </p>
+        </template>
+
+        <template v-else>
+          <div class="grid grid-cols-12 gap-4 bg-default rounded-2xl p-4 space-y-8 sm:space-y-0">
+            <!-- Featured Post -->
+            <div class="col-span-full md:col-start-1 md:col-end-7">
+              <HomeSinglePost :post="filteredPosts[0]!" />
             </div>
-            <!-- if posts.length > 1 iterate over posts and slice the rest of the posts -->
-            <div v-if="filteredPosts.length > 1" class="col-span-full md:col-start-7 md:col-end-13">
-              <HomePostList :posts="filteredPosts" />
+
+            <!-- Additional Posts -->
+            <div
+              v-if="filteredPosts.length > 1"
+              class="col-span-full md:col-start-7 md:col-end-13"
+            >
+              <HomePostList :posts="filteredPosts.slice(1)" />
             </div>
           </div>
-        </div>
-        <div v-else>
-          <p class="text-center text-muted">
-            {{ 'No pinned posts' }}
-          </p>
-        </div>
+        </template>
       </div>
     </motion.section>
   </div>

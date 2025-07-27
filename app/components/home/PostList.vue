@@ -1,66 +1,51 @@
 <script setup lang="ts">
-import ReadTime from '~/components/blog/ReadTime.vue'
+import type { BlogPost } from '~/types/blog'
 
-const { posts } = defineProps<{ posts: any }>()
-
-// if posts.length > 1 iterate over posts and slice from first post to max 5 posts
-const postsList = computed(() => posts.slice(1, 10).map((post: any) => ({
-  ...post,
-})))
-
-const readTimeClass = computed(() => {
-  return 'bg-transparent'
-})
+defineProps<{
+  posts: Pick<BlogPost, 'title' | 'date' | 'path' | 'cover' | 'language'>[]
+}>()
 </script>
 
 <template>
-  <div
-    class="w-full overflow-y-auto h-[18rem] md:h-[26.6rem] lg:h-[29.5rem] [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500"
-  >
-    <ul class="p-4">
-      <li v-for="post in postsList" :key="post.id" class="flex py-1.5 first:pt-0 last:pb-0">
-        <NuxtLinkLocale :to="post.path" class="w-full group">
-          <div class="flex items-center gap-x-2 p-2 border-2 border-dashed border-muted space-y-1 group-hover:border-solid transition-colors duration-300 ease-out">
-            <!-- image processing for multiple device -->
-            <NuxtImg
-              :src="post.cover"
-              class="rounded-lg max-h-10"
-              provider="cloudinary"
-              width="40"
-              height="40"
-              :alt="post.title"
-              quality="80"
-              format="webp"
-              placeholder
-              loading="lazy"
+  <div class="space-y-4 overflow-y-auto h-[18rem] md:h-[26.6rem] lg:h-[29.5rem] [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
+    <article
+      v-for="(post, index) in posts"
+      :key="post.path"
+      class="group"
+      :class="{ 'pt-4 border-t border-muted': index > 0 }"
+    >
+      <NuxtLinkLocale
+        :to="post.path"
+        class="grid grid-cols-3 gap-4 items-center"
+      >
+        <div class="col-span-1 aspect-video overflow-hidden rounded-lg">
+          <NuxtImg
+            :src="post.cover?.image || '/images/placeholder.jpg'"
+            :alt="post.title"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            provider="cloudinary"
+            width="250"
+            height="150"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-span-2">
+          <h3 class="font-medium group-hover:text-primary transition-colors line-clamp-2">
+            {{ post.title }}
+          </h3>
+          <time
+            v-if="post.date"
+            class="text-xs text-muted"
+          >
+            <i18n-d
+              tag="span"
+              :value="new Date(post.date)"
+              scope="global"
+              :format="{ year: 'numeric', month: 'short', day: 'numeric' }"
             />
-            <div class="ml-3 overflow-hidden">
-              <h3 class="pb-0 mb-0 text-sm font-semibold group-hover:text-primary transition-colors duration-300 ease-out">
-                {{ post.title }}
-              </h3>
-              <div class="items-center inline-flex">
-                <div class="flex items-center gap-x-1 text-[0.69rem] font-medium">
-                  <UIcon name="i-tabler-calendar" />
-                  <i18n-d
-                    tag="span"
-                    :value="new Date(post.date)"
-                    scope="global"
-                    :format="{ year: 'numeric', month: 'short', day: 'numeric' }"
-                  />
-                </div>
-                <ReadTime
-                  :content="post.body"
-                  :language="post.language"
-                  :show-word-count="false"
-                  :reading-time-class="readTimeClass"
-                />
-              </div>
-            </div>
-          </div>
-        </NuxtLinkLocale>
-      </li>
-    </ul>
+          </time>
+        </div>
+      </NuxtLinkLocale>
+    </article>
   </div>
 </template>
-
-<style scoped></style>
