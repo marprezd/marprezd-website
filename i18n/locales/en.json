@@ -185,6 +185,9 @@
         "success": "Success",
         "danger": "Danger"
       },
+      "filter": {
+        "or": "Or"
+      },
       "hero": {
         "title": "Let’s check out the latest posts",
         "description": "Improve your software development skills by exploring our carefully selected list of articles."
@@ -206,7 +209,7 @@
           "tag": "{tag}",
           "description": "Check out our collection of blog articles under the {tag} tag. There are currently ({total}) posts in total."
         },
-        "label": "Top tags"
+        "label": "Filter by tag"
       },
       "categories": {
         "hero": {
@@ -214,7 +217,7 @@
           "category": "{category}",
           "description": "Check out our collection of blog articles under the {category} category. There are currently ({total}) posts in total."
         },
-        "label": "Top categories"
+        "label": "Filter by category"
       },
       "block-code": {
         "copy": "Copy Code",
@@ -265,7 +268,10 @@
       "added": "Added",
       "updated": "Last updated",
       "view": "time read",
-      "views": "times read"
+      "views": "times read",
+      "errors": {
+        "fetch_posts": "Failed to fetch posts. Please try again later."
+      }
     }
   }
 }

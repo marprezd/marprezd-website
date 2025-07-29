@@ -174,6 +174,9 @@
       "no-pinned-posts": "No hay publicaciones fijadas"
     },
     "blog": {
+      "filter": {
+        "or": "O"
+      },
       "reading-time": {
         "label": "Tiempo estimado de lectura",
         "mins": "mins lectura"
@@ -199,6 +202,22 @@
         "next-page": "Ir a la página siguiente",
         "next": "Siguiente",
         "more-pages": "Más páginas"
+      },
+      "tags": {
+        "hero": {
+          "title": "Publicaciones etiquetadas con {0}",
+          "tag": "{tag}",
+          "description": "Visita nuestra colección de artículos de blog bajo la etiqueta {tag}. Actualmente hay ({total}) publicaciones en total."
+        },
+        "label": "Filtrar por etiqueta"
+      },
+      "categories": {
+        "hero": {
+          "title": "Publicaciones en la categoría {0}",
+          "category": "{category}",
+          "description": "Visita nuestra colección de artículos de blog bajo la categoría {category}. Actualmente hay ({total}) publicaciones en total."
+        },
+        "label": "Filtrar por categoría"
       },
       "toc": {
         "label": "En esta página"
@@ -236,7 +255,10 @@
       "added": "Añadido",
       "updated": "Ultima actualización",
       "view": "tiempo de lectura",
-      "views": "veces leido"
+      "views": "veces leido",
+      "errors": {
+        "fetch_posts": "No se pudieron cargar los datos. Inténtelo de nuevo más tarde."
+      }
     }
   }
 }

@@ -185,6 +185,9 @@
         "success": "Başarı",
         "danger": "Tehlike"
       },
+      "filter": {
+        "or": "veya"
+      },
       "hero": {
         "title": "En son gönderilere göz atalım",
         "description": "Dikkatle seçilmiş makale listemizi inceleyerek yazılım geliştirme becerilerinizi geliştirin."
@@ -206,7 +209,7 @@
           "tag": "{tag}",
           "description": "{tag} etiketiyle ilgili gönderilerimizi keşfedin. Şu anda toplam ({total}) gönderi var."
         },
-        "label": "En popüler etiketler"
+        "label": "Etikete göre filtrele"
       },
       "categories": {
         "hero": {
@@ -214,7 +217,7 @@
           "category": "{category}",
           "description": "{category} kategorisindeki gönderilerimizi keşfedin. Şu anda toplam ({total}) gönderi var."
         },
-        "label": "En popüler kategoriler"
+        "label": "Kategoriye göre filtrele"
       },
       "block-code": {
         "copy": "Kodu Kopyala",
@@ -264,7 +267,10 @@
       "added": "Eklendi",
       "updated": "Son güncelleme",
       "view": "kez okundu",
-      "views": "kez okundu"
+      "views": "kez okundu",
+      "errors": {
+        "fetch_posts": "Gönderiler alınamadı. Lütfen daha sonra tekrar deneyin."
+      }
     }
   }
 }
