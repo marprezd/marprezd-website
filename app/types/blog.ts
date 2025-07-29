@@ -19,4 +19,5 @@ export interface BlogPost {
   pinned?: boolean
   tags?: string[]
   otherLanguages?: string[]
+  published?: boolean
 }
