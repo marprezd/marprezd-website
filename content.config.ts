@@ -28,7 +28,6 @@ export default defineContentConfig({
           type: z.string(),
           children: z.any(),
         }),
-        summary: z.string(),
         tags: z.array(z.string()),
         categories: z.array(z.string()),
         language: z.string(),
