@@ -175,17 +175,23 @@ export default defineNuxtConfig({
     },
   },
   image: {
+    format: ['webp', 'avif', 'png', 'jpg', 'jpeg', 'gif', 'svg'],
+    provider: 'cloudinary',
     cloudinary: {
       baseURL: 'https://res.cloudinary.com/dieoeaoiy/image/upload',
+    },
+    domains: ['res.cloudinary.com'],
+    alias: {
+      cloudinary: 'https://res.cloudinary.com/dieoeaoiy/image/upload',
     },
   },
   security: {
     strict: false,
     headers: {
       contentSecurityPolicy: {
-        'default-src': ['\'self\'', 'https://*.cloudinary.com', 'https://*.vercel.app', 'https://api.iconify.design'],
+        'default-src': ['\'self\'', 'https://*.cloudinary.com', 'https://api.iconify.design'],
         'img-src': ['\'self\'', 'https://*.cloudinary.com', 'data:'],
-        'script-src': ['\'self\'', '\'unsafe-inline\'', '\'unsafe-eval\'', 'https://*.vercel.app', 'https://api.iconify.design'],
+        'script-src': ['\'self\'', '\'unsafe-inline\'', '\'unsafe-eval\'', 'https://api.iconify.design'],
         'style-src': ['\'self\'', '\'unsafe-inline\''],
         'connect-src': ['\'self\''],
         'object-src': ['\'none\''],
