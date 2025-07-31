@@ -31,3 +31,8 @@
 body {
   padding: 0 !important;
 }
+
+/* Prevent header titles from being hidden behind a fixed navigation bar when scrolling to a TOC item */
+.prose :where(h1, h2, h3,) {
+  scroll-margin-top: 5.5rem;
+}
