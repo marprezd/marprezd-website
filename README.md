@@ -13,6 +13,7 @@ This is the main repository for my website [`marprezd.dev`](https://marprezd.dev
 - [Cloudflare](https://www.cloudflare.com/)
 - [Open Next](https://open-next.js.org/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Velite](https://velite.js.org/)
 
 ## Linting and Formatting
 
@@ -21,6 +22,10 @@ This project uses [ESLint](https://eslint.org/) with [eslint-config](https://git
 ## Project Structure
 
 ```
+├── content/
+│   ├── categories/
+│   ├── posts/
+│   └── tags/
 ├── messages/
 │   ├── en.json
 │   ├── es.json
@@ -98,6 +103,7 @@ This project uses [ESLint](https://eslint.org/) with [eslint-config](https://git
 ├── pnpm-lock.yaml
 ├── postcss.config.mjs
 ├── tsconfig.json
+├── velite.config.ts
 └── wrangler.jsonc
 ```
 
@@ -112,7 +118,8 @@ This project uses [ESLint](https://eslint.org/) with [eslint-config](https://git
 - 🎨 **Beautiful UI** - Clean and modern interface with MUI components
 - 📊 **Analytics Ready** - Easy integration with your favorite analytics tools
 - 🔍 **SEO Optimized** - Built-in SEO best practices and metadata management
-- 📝 **Markdown Support** - Easy content management with Markdown
+- 📝 **Markdown and YAML Support** - Easy content management with Markdown/YAML files processed by Velite
+- 📚 **Content Collections** - Organize content into collections with Velite
 
 ## Installation
 
