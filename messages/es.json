@@ -1,0 +1,22 @@
+{
+  "app": {
+    "metadata": {
+      "homepage": {
+        "title": "Mario Perez | Python, Next.js & API Design",
+        "description": "¡Explora mi sitio web! Adéntrate en mis proyectos y artículos sobre Python, Next.js y otras tecnologías para aprender a crear aplicaciones web increíbles.",
+        "generator": "Mario Pérez | Sitio Web Personal"
+      }
+    },
+    "manifest": {
+      "name": "Marprezd Website"
+    },
+    "not-found-page": {
+      "description": "Por favor, verifique la barra de direcciones del navegador o use la navegación para ir a una página conocida.",
+      "title": "Página no encontrada"
+    },
+    "error": {
+      "description": "<p>¡Lamentablemente hemos encontrado un error!</p><p>Puedes intentar <retry>recargar la página</retry> que estabas visitando.</p>",
+      "title": "¡Algo salió mal!"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "app": {
+    "metadata": {
+      "homepage": {
+        "title": "Mario Perez | Python, Next.js & API Design",
+        "description": "Web sitemi keşfedin! Python, Next.js ve diğer teknolojiler hakkındaki projelerimi ve makalelerimi inceleyerek çarpıcı web uygulamaları oluşturmayı öğrenin.",
+        "generator": "Mario Pérez | kendi web sitesi"
+      }
+    },
+    "manifest": {
+      "name": "Marprezd Website"
+    },
+    "not-found-page": {
+      "description": "Lütfen tarayıcının adres çubuğunu kontrol edin veya bilinen bir sayfaya gitmek için navigasyonu kullanın.",
+      "title": "Sayfa bulunamadı"
+    },
+    "error": {
+      "description": "<p>Üzgünüm, bir hata oluştu.</p><p>Sayfayı <retry>yeniden yükleyebilirsiniz</retry>.</p>",
+      "title": "Bir hata oluştu!"
+    }
+  }
+}
