@@ -1,5 +1,22 @@
 import { exec } from "node:child_process"
 import { promisify } from "node:util"
+import rehypeShiki from "@shikijs/rehype"
+import {
+  transformerMetaHighlight,
+  transformerNotationDiff,
+  transformerNotationErrorLevel,
+  transformerNotationFocus,
+  transformerNotationHighlight,
+  transformerNotationWordHighlight,
+} from "@shikijs/transformers"
+import rehypeAutolinkHeadings from "rehype-autolink-headings"
+import rehypeMathjax from "rehype-mathjax"
+import rehypeSlug from "rehype-slug"
+import rehypeStringify from "rehype-stringify"
+import rehypeUnwrapImages from "rehype-unwrap-images"
+import emoji from "remark-emoji"
+import remarkGfm from "remark-gfm"
+import remarkMath from "remark-math"
 import { defineCollection, defineConfig, s } from "velite"
 
 const execAsync = promisify(exec)
@@ -127,8 +144,44 @@ export default defineConfig({
     tags,
   },
   mdx: {
-    rehypePlugins: [],
-    remarkPlugins: [],
+    rehypePlugins: [
+      rehypeStringify,
+      rehypeSlug,
+      rehypeMathjax,
+      [
+        rehypeAutolinkHeadings,
+        {
+          behavior: "append",
+          properties: {
+            className: ["anchor-link"],
+            ariaLabel: "Link to section",
+          },
+        },
+      ],
+      [rehypeShiki, {
+        themes: {
+          light: "github-light",
+          dark: "github-dark",
+        },
+        transformers: [
+          transformerMetaHighlight(),
+          transformerNotationDiff({ matchAlgorithm: "v3" }),
+          transformerNotationFocus({ matchAlgorithm: "v3" }),
+          transformerNotationErrorLevel({ matchAlgorithm: "v3" }),
+          transformerNotationHighlight({ matchAlgorithm: "v3" }),
+          transformerNotationWordHighlight({ matchAlgorithm: "v3" }),
+        ],
+      }],
+      rehypeUnwrapImages,
+    ],
+    remarkPlugins: [
+      remarkMath,
+      remarkGfm,
+      [emoji, {
+        accessible: true,
+        emoticon: true,
+      }],
+    ],
   },
   prepare: ({ posts, categories, tags }) => {
     const postsByLocale = posts.reduce((acc, post) => {
