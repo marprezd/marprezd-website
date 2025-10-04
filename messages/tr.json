@@ -17,6 +17,87 @@
     "error": {
       "description": "<p>Üzgünüm, bir hata oluştu.</p><p>Sayfayı <retry>yeniden yükleyebilirsiniz</retry>.</p>",
       "title": "Bir hata oluştu!"
+    },
+    "menu": {
+      "items": {
+        "home": {
+          "label": "Ana sayfa"
+        },
+        "pages": {
+          "label": "sayfalar",
+          "items": {
+            "works": {
+              "label": "İşler",
+              "description": "Geliştirdiğim web uygulamaları ve diğer yazılımlar."
+            },
+            "resources": {
+              "label": "Kaynaklar",
+              "description": "Kaçırmamanız gereken okunması gereken kitaplar."
+            },
+            "hire": {
+              "label": "Beni işe al",
+              "description": "Bir sonraki yazılım projeniz hakkında konuşalım."
+            },
+            "repositories": {
+              "label": "Github Depoları",
+              "description": "Açık kaynaklı projeler portföy listesi."
+            },
+            "tags": {
+              "label": "Etiketler",
+              "description": "Etiketler koleksiyonu."
+            },
+            "categories": {
+              "label": "Kategoriler",
+              "description": "Kategoriler koleksiyonu."
+            }
+          }
+        },
+        "tutorials": {
+          "label": "Eğitimler",
+          "items": {
+            "courses": {
+              "label": "Kurslar",
+              "description": "Bilişim Teknolojileriyle İlgili Kurslar."
+            },
+            "blog": {
+              "label": "Blog",
+              "description": "Yazılım mühendisleri için teknisyen makaleleri."
+            }
+          }
+        },
+        "communities": {
+          "label": "Topluluklar",
+          "items": {
+            "guestbook": {
+              "label": "Ziyaretçi defteri",
+              "description": "Ziyaretçi defterimize yazdığınız geri bildirimleri önemsiyoruz."
+            },
+            "patreon": {
+              "label": "Patreon",
+              "description": "Yalnızca abonelerin erişebildiği içeriğe erişin."
+            }
+          }
+        },
+        "resume": {
+          "label": "Özgeçmiş",
+          "tooltip": {
+            "label": "Özgeçmişi indir"
+          }
+        }
+      }
+    },
+    "user-menu": {
+      "adjustments": {
+        "language": {
+          "label": "Dil"
+        },
+        "theme": {
+          "label": "Tema",
+          "light": "Açık",
+          "dark": "Koyu",
+          "system": "Sistem"
+        }
+      }
     }
   }
 }

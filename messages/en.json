@@ -17,6 +17,87 @@
     "error": {
       "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
       "title": "Something went wrong!"
+    },
+    "menu": {
+      "items": {
+        "home": {
+          "label": "Home"
+        },
+        "pages": {
+          "label": "Pages",
+          "items": {
+            "works": {
+              "label": "Works",
+              "description": "Web applications and other software I have developed."
+            },
+            "resources": {
+              "label": "Resources",
+              "description": "A list of must-read books you shouldn’t miss."
+            },
+            "hire": {
+              "label": "Hire me",
+              "description": "Let's talk about your next software project."
+            },
+            "repositories": {
+              "label": "Github Repositories",
+              "description": "Open source projects portfolio list."
+            },
+            "tags": {
+              "label": "Tags",
+              "description": "Colections of tags."
+            },
+            "categories": {
+              "label": "Categories",
+              "description": "Colections of categories."
+            }
+          }
+        },
+        "tutorials": {
+          "label": "Tutorials",
+          "items": {
+            "courses": {
+              "label": "Courses",
+              "description": "Information Technology-Related Courses."
+            },
+            "blog": {
+              "label": "Blog",
+              "description": "Technician articles for software engineers."
+            }
+          }
+        },
+        "communities": {
+          "label": "Communities",
+          "items": {
+            "guestbook": {
+              "label": "Guest book",
+              "description": "We appreciate your feedback in our guestbook."
+            },
+            "patreon": {
+              "label": "Patreon",
+              "description": "Access content that is available only to subscribers."
+            }
+          }
+        },
+        "resume": {
+          "label": "Resume",
+          "tooltip": {
+            "label": "Download resume"
+          }
+        }
+      }
+    },
+    "user-menu": {
+      "adjustments": {
+        "language": {
+          "label": "Language"
+        },
+        "theme": {
+          "label": "Theme",
+          "light": "Light",
+          "dark": "Dark",
+          "system": "System"
+        }
+      }
     }
   }
 }

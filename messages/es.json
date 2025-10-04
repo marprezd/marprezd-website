@@ -17,6 +17,87 @@
     "error": {
       "description": "<p>¡Lamentablemente hemos encontrado un error!</p><p>Puedes intentar <retry>recargar la página</retry> que estabas visitando.</p>",
       "title": "¡Algo salió mal!"
+    },
+    "menu": {
+      "items": {
+        "home": {
+          "label": "Inicio"
+        },
+        "pages": {
+          "label": "Páginas",
+          "items": {
+            "works": {
+              "label": "Trabajos",
+              "description": "Aplicaciones web y otro software que he desarrollado."
+            },
+            "resources": {
+              "label": "Recursos",
+              "description": "Libros imprescindibles que no debe perderse."
+            },
+            "hire": {
+              "label": "Contrátame",
+              "description": "Hablemos de tu próximo proyecto de software."
+            },
+            "repositories": {
+              "label": "Github Repositories",
+              "description": "Listado de cartera de proyectos de código abierto"
+            },
+            "tags": {
+              "label": "Etiquetas",
+              "description": "Coleccion de Etiquetas."
+            },
+            "categories": {
+              "label": "Categorias",
+              "description": "Coleccion de Categorias."
+            }
+          }
+        },
+        "tutorials": {
+          "label": "Tutoriales",
+          "items": {
+            "courses": {
+              "label": "Cursos",
+              "description": "Cursos relacionados con las tecnologías de la información."
+            },
+            "blog": {
+              "label": "Blog",
+              "description": "Artículos técnicos para ingenieros de software."
+            }
+          }
+        },
+        "communities": {
+          "label": "Comunidades",
+          "items": {
+            "guestbook": {
+              "label": "Libro visitas",
+              "description": "Agradecemos sus comentarios en nuestro libro de visitas."
+            },
+            "patreon": {
+              "label": "Patreon",
+              "description": "Acceda a contenido disponible solo para suscriptores."
+            }
+          }
+        },
+        "resume": {
+          "label": "Currículum",
+          "tooltip": {
+            "label": "Descargar currículum"
+          }
+        }
+      }
+    },
+    "user-menu": {
+      "adjustments": {
+        "language": {
+          "label": "Lenguaje"
+        },
+        "theme": {
+          "label": "Tema",
+          "light": "Claro",
+          "dark": "Oscuro",
+          "system": "Sistema"
+        }
+      }
     }
   }
 }
