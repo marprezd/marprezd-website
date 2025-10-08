@@ -26,6 +26,9 @@ const nextConfig: NextConfig = {
     qualities: [80],
     formats: ["image/avif", "image/webp"],
   },
+  experimental: {
+    optimizePackageImports: ["@chakra-ui/react"],
+  },
 }
 
 // apply next-intl plugin
