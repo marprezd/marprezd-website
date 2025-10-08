@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
@@ -13,12 +13,9 @@
     "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts"
   },
   "dependencies": {
-    "@emotion/cache": "^11.14.0",
+    "@chakra-ui/react": "^3.27.1",
     "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
-    "@mui/material": "^7.3.3",
-    "@mui/material-nextjs": "^7.3.3",
-    "@opennextjs/cloudflare": "^1.9.1",
+    "@opennextjs/cloudflare": "^1.9.2",
     "@shikijs/rehype": "^3.13.0",
     "@shikijs/transformers": "^3.13.0",
     "@tabler/icons-react": "^3.35.0",
@@ -26,7 +23,8 @@
     "github-slugger": "^2.0.0",
     "motion": "^12.23.22",
     "next": "15.5.4",
-    "next-intl": "^4.3.9",
+    "next-intl": "^4.3.11",
+    "next-themes": "^0.4.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "rehype-autolink-headings": "^7.1.0",
@@ -44,22 +42,19 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^5.4.1",
+    "@chakra-ui/cli": "^3.27.1",
     "@eslint/eslintrc": "^3.3.1",
-    "@tailwindcss/postcss": "^4.1.14",
-    "@tailwindcss/typography": "^0.5.19",
     "@types/node": "^20.19.19",
-    "@types/react": "^19.1.17",
-    "@types/react-dom": "^19.1.11",
-    "eslint": "^9.36.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.1",
+    "eslint": "^9.37.0",
     "eslint-config-next": "15.5.4",
-    "tailwindcss": "^4.1.14",
     "typescript": "^5.9.3",
     "velite": "^0.3.0",
-    "wrangler": "^4.40.3"
+    "wrangler": "^4.42.1"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
-      "@tailwindcss/oxide",
       "esbuild",
       "sharp",
       "unrs-resolver",
