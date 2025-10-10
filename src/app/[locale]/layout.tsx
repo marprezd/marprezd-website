@@ -1,9 +1,9 @@
+// src/app/[locale]/layout.tsx
 import { hasLocale } from "next-intl"
 import { setRequestLocale } from "next-intl/server"
 import { notFound } from "next/navigation"
 import BaseLayout from "@/components/BaseLayout"
 import { routing } from "@/i18n/routing"
-import "../../styles/globals.css"
 
 export default async function LocaleLayout({
   children,
