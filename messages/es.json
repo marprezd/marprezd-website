@@ -87,17 +87,28 @@
       }
     },
     "user-menu": {
-      "adjustments": {
-        "language": {
-          "label": "Lenguaje"
-        },
-        "theme": {
-          "label": "Tema",
-          "light": "Claro",
-          "dark": "Oscuro",
-          "system": "Sistema"
-        }
+      "label": "Menu de usuario",
+      "language": {
+        "label": "Idioma"
+      },
+      "theme": {
+        "label": "Tema",
+        "light": "Claro",
+        "dark": "Oscuro",
+        "system": "Sistema"
       }
+    },
+    "search": {
+      "title": "Buscar artículos",
+      "placeholder": "¿Qué estás buscando?",
+      "starting": "Buscando...",
+      "no-found": "No se encontraron artículos. Intente con una búsqueda diferente.",
+      "min-chars": "Escribe al menos 3 caracteres para buscar...",
+      "type-to-search": "Escribe para buscar artículos...",
+      "close": "Presiona Esc para cerrar",
+      "move-to-top": "Mover arriba",
+      "move-to-bottom": "Mover abajo",
+      "select": "Seleccionar"
     }
   }
 }

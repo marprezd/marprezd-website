@@ -87,17 +87,28 @@
       }
     },
     "user-menu": {
-      "adjustments": {
-        "language": {
-          "label": "Dil"
-        },
-        "theme": {
-          "label": "Tema",
-          "light": "Açık",
-          "dark": "Koyu",
-          "system": "Sistem"
-        }
+      "label": "Kullanıcı Menüsü",
+      "language": {
+        "label": "Dil"
+      },
+      "theme": {
+        "label": "Tema",
+        "light": "Açık",
+        "dark": "Koyu",
+        "system": "Sistem"
       }
+    },
+    "search": {
+      "title": "Makaleleri ara",
+      "placeholder": "Ne arıyorsunuz?",
+      "starting": "Aranıyor...",
+      "no-found": "Makale bulunamadı. Farklı bir arama terimi deneyin.",
+      "min-chars": "En az 3 karakter yazarak arayın...",
+      "type-to-search": "Makaleleri arayın...",
+      "close": "Esc tuşuna basın",
+      "move-to-top": "En üstüne taşı",
+      "move-to-bottom": "En altına taşı",
+      "select": "Seç"
     }
   }
 }

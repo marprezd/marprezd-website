@@ -87,17 +87,28 @@
       }
     },
     "user-menu": {
-      "adjustments": {
-        "language": {
-          "label": "Language"
-        },
-        "theme": {
-          "label": "Theme",
-          "light": "Light",
-          "dark": "Dark",
-          "system": "System"
-        }
+      "label": "User Menu",
+      "language": {
+        "label": "Language"
+      },
+      "theme": {
+        "label": "Theme",
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
       }
+    },
+    "search": {
+      "title": "Search articles",
+      "placeholder": "What are you looking for?",
+      "starting": "Searching...",
+      "no-found": "No articles found. Try a different search term.",
+      "min-chars": "Type at least 3 characters to search...",
+      "type-to-search": "Start typing to search articles...",
+      "close": "Press Esc to close",
+      "move-to-top": "Move to top",
+      "move-to-bottom": "Move to bottom",
+      "select": "Select"
     }
   }
 }
