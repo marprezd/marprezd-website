@@ -2,18 +2,21 @@
 
 [![code style](https://antfu.me/badge-code-style.svg)](https://github.com/antfu/eslint-config)
 
-This is the main repository for my website [`marprezd.dev`](https://marprezd.dev), built on Next.js, Tailwind CSS, and other great software packages.
+This is the main repository for my website [`marprezd.dev`](https://marprezd.dev), built on Next.js, Chakra UI, and other great software packages.
 
 ## Software Stack
 
 - [Next.js](https://nextjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [MUI](https://mui.com/)
 - [next-intl](https://next-intl.vercel.app/)
 - [Cloudflare](https://www.cloudflare.com/)
 - [Open Next](https://open-next.js.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Velite](https://velite.js.org/)
+- [Chakra UI](https://chakra-ui.com/)
+- [Next Themes](https://github.com/vercel/next-themes)
+- [Tabler Icons](https://tabler-icons.io/)
+- [Cloudflare Workers](https://workers.cloudflare.com/)
+- [Fuse.js](https://fusejs.io/)
 
 ## Linting and Formatting
 
@@ -39,7 +42,6 @@ This project uses [ESLint](https://eslint.org/) with [eslint-config](https://git
 │   ├── resume/
 │   │   └── cv.pdf
 │   ├── static/
-│   │   └── blog_gxeqe5-d26f1329.jpg
 │   ├── _headers
 │   ├── android-chrome-192x192.png
 │   ├── android-chrome-512x512.png
@@ -76,19 +78,17 @@ This project uses [ESLint](https://eslint.org/) with [eslint-config](https://git
 │   │   ├── page.tsx
 │   │   └── robots.txt
 │   ├── components/
+│   │   ├── atoms/
+│   │   ├── molecules/
 │   │   ├── organisms/
-│   │   │   └── AppHeader.tsx
 │   │   ├── templates/
-│   │   │   └── NotFoundPage.tsx
 │   │   └── BaseLayout.tsx
 │   ├── i18n/
 │   │   ├── navigation.ts
 │   │   ├── request.ts
 │   │   └── routing.ts
 │   ├── lib/
-│   │   └── muiTheme.ts
-│   ├── styles/
-│   │   └── globals.css
+│   │   └── theme.ts
 │   └── middleware.ts
 ├── .gitignore
 ├── CODE_OF_CONDUCT.md
@@ -101,7 +101,6 @@ This project uses [ESLint](https://eslint.org/) with [eslint-config](https://git
 ├── open-next.config.ts
 ├── package.json
 ├── pnpm-lock.yaml
-├── postcss.config.mjs
 ├── tsconfig.json
 ├── velite.config.ts
 └── wrangler.jsonc
@@ -110,12 +109,12 @@ This project uses [ESLint](https://eslint.org/) with [eslint-config](https://git
 ## ✨ Key Features
 
 - 🌐 **Internationalization** - Built-in support for multiple languages (English, Spanish, and Turkish) with next-intl
-- 🌓 **Dark/Light Mode** - Automatic theme switching based on system preferences with MUI theming
-- 📱 **Fully Responsive** - Optimized for all device sizes using Tailwind CSS and MUI
+- 🌓 **Dark/Light Mode** - Automatic theme switching based on system preferences with Chakra UI theming and Next Themes.
+- 📱 **Fully Responsive** - Optimized for all device sizes using Chakra UI
 - ⚡ **Blazing Fast** - Built with Next.js for optimal performance and SEO
 - 🚀 **Edge-Ready** - Deployed on Cloudflare Edge Network for global performance
 - 🛠 **Modern Stack** - Built with TypeScript, Next.js 15+, and React 19+
-- 🎨 **Beautiful UI** - Clean and modern interface with MUI components
+- 🎨 **Beautiful UI** - Clean and modern interface with Chakra UI components
 - 📊 **Analytics Ready** - Easy integration with your favorite analytics tools
 - 🔍 **SEO Optimized** - Built-in SEO best practices and metadata management
 - 📝 **Markdown and YAML Support** - Easy content management with Markdown/YAML files processed by Velite
