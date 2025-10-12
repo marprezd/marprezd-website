@@ -1,54 +1,143 @@
+/* eslint-disable perfectionist/sort-imports */
+// src/components/organisms/AppHeader.tsx
 "use client"
 
-import { AppBar, Toolbar, Typography } from "@mui/material"
-import Box from "@mui/material/Box"
-import FormControl from "@mui/material/FormControl"
-import FormControlLabel from "@mui/material/FormControlLabel"
-import Radio from "@mui/material/Radio"
-import RadioGroup from "@mui/material/RadioGroup"
-import { useColorScheme } from "@mui/material/styles"
+// UI Components
+import {
+  Box,
+  CloseButton,
+  Container,
+  Drawer,
+  Flex,
+  HStack,
+  IconButton,
+  Portal,
+} from "@chakra-ui/react"
+
+// Icons
+import { IconMenuDeep } from "@tabler/icons-react"
+
+// Local Components
+import LogoAvatar from "../atoms/LogoAvatar"
+import CurriculumVitae from "../molecules/CurriculumVitae"
+import DesktopMenu from "./DesktopMenu"
+import MobilMenu from "./MobilMenu"
+import Search from "./Search"
+import UserMenu from "./UserMenu"
+
+// Hooks
 import React from "react"
 
+/*
+ * AppHeader Component
+ * ------------------
+ * The AppHeader component is a fixed header component that is used to display the logo, desktop menu, right controls, and mobile menu.
+ * It is used in the AppLayout component.
+ */
 export default function AppHeader() {
-  const { mode, setMode } = useColorScheme()
+  const [mounted, setMounted] = React.useState(false)
+  const [open, setOpen] = React.useState(false)
 
-  if (!mode) {
+  React.useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted)
     return null
-  }
 
   return (
-    <AppBar position="fixed" sx={{ bgcolor: "background.default", boxShadow: "none", borderBottom: "1px solid rgba(0, 0, 0, 0.12)" }}>
-      <Toolbar
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <Typography variant="h6" color="text.primary" component="div" sx={{ flexGrow: 1 }}>
-          MARPREZD
-        </Typography>
-        <Box
-          sx={{ display: "flex", alignItems: "center" }}
-          p={1}
-          borderRadius={2}
+    <Box
+      position="fixed"
+      top={0}
+      w="100%"
+      h="64px"
+      borderBottom="1px"
+      borderBottomColor="gray.300"
+      _dark={{ borderBottomColor: "gray.700" }}
+      bg="bg.subtle"
+      display="flex"
+      alignItems="center"
+      zIndex="sticky"
+      boxShadow="sm"
+    >
+      <Container maxW="8xl">
+        <Flex
+          align="center"
+          justify="space-between"
+          wrap="nowrap"
         >
-          <FormControl>
-            <RadioGroup
-              aria-labelledby="demo-theme-toggle"
-              name="theme-toggle"
-              row
-              value={mode}
-              onChange={event =>
-                setMode(event.target.value as "system" | "light" | "dark")}
-            >
-              <FormControlLabel value="system" control={<Radio />} label="System" />
-              <FormControlLabel value="light" control={<Radio />} label="Light" />
-              <FormControlLabel value="dark" control={<Radio />} label="Dark" />
-            </RadioGroup>
-          </FormControl>
-        </Box>
-      </Toolbar>
-    </AppBar>
+          {/* Logo */}
+          <Box flexShrink={0}>
+            <LogoAvatar />
+          </Box>
+
+          {/* Desktop Menu */}
+          <HStack
+            paddingX={2}
+            flex={1}
+            justify="center"
+            display={{ base: "none", md: "flex" }}
+          >
+            <DesktopMenu />
+          </HStack>
+
+          {/* Right Controls */}
+          <HStack
+            bg={{ base: "white", _dark: "black" }}
+            border="1px solid"
+            borderColor="border.emphasized"
+            borderRadius="full"
+            p={1}
+          >
+            <UserMenu />
+            <CurriculumVitae />
+            <Search />
+          </HStack>
+
+          {/* Mobile Menu (Drawer) - hidden on md and above */}
+          <Drawer.Root
+            open={open}
+            onOpenChange={e => setOpen(e.open)}
+            size="full"
+          >
+            <Drawer.Trigger asChild>
+              <IconButton
+                size="sm"
+                aria-label="Mobile menu"
+                variant="surface"
+                colorPalette="primary"
+                rounded="xl"
+                display={{ base: "flex", md: "none" }}
+              >
+                <IconMenuDeep />
+              </IconButton>
+            </Drawer.Trigger>
+            <Portal>
+              <Drawer.Backdrop />
+              <Drawer.Positioner>
+                <Drawer.Content>
+                  <Drawer.Header>
+                    <Drawer.Title>
+                      Main Menu
+                    </Drawer.Title>
+                  </Drawer.Header>
+                  <Drawer.Body>
+                    <MobilMenu onClose={() => setOpen(false)} />
+                  </Drawer.Body>
+                  <Drawer.Footer>
+                    <Drawer.CloseTrigger asChild>
+                      <CloseButton
+                        color="red"
+                        variant="ghost"
+                      />
+                    </Drawer.CloseTrigger>
+                  </Drawer.Footer>
+                </Drawer.Content>
+              </Drawer.Positioner>
+            </Portal>
+          </Drawer.Root>
+        </Flex>
+      </Container>
+    </Box>
   )
 }
